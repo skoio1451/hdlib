@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+@font-face {
+
+font-family: nf;
+src:url('../YouandiModernTR.ttf');
+}
+
+@font-face {
+
+font-family: bd;
+src:url('../YouandiModernHB.ttf');
+}
+
+#wrap{
+    font-family: nf;
+}
+
+h1{
+    padding:100px 0;
+    text-align: center;
+    font-size: 40px;
+        font-family: bd;
+    font-weight: 100;
+    margin-top: 140px;
+}
+
+
+
+
+h2{
+    text-align: center;
+font-family: bd;
+    font-weight: 100;
+    font-size: 60px;
+    
+}
+
+
+
+/*hour*/
+
+.hour{
+    background-size: cover;
+    padding: 0 0 280px 0;
+    
+}
+
+#music_visit .hour{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),url(../img/ml_map_bg.jpg);
+}
+#design_visit .hour{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),url(../img/dl_map_bg.jpg);
+}
+#travel_visit .hour{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),url(../img/tl_map_bg2.jpg);
+}
+
+#cooking_visit .hour{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),url(../img/cl_map_bg.jpg);
+}
+.hour h2{
+    padding: 180px 0;
+    color: #fff;
+}
+
+
+.hour_small{
+    color: #b4b4b4;
+    margin: 0 0 30px 0;
+}
+.hour_big{
+    color: #fff;
+    font-family: bd;
+    font-size: 30px;
+    margin: 0 0 45px 0;
+}
+
+.hour .col-6:nth-child(3){
+    text-align: right;
+}
+
+/*admission*/
+
+.admission h2{
+    padding: 130px 0 110px 0;
+}
+
+.admission h3{
+    font-family: bd;
+    font-weight: 100;
+    margin: 0 0 55px 0;
+    font-size: 24px;
+}
+
+.admission p{
+    line-height: 2;
+    margin: 0 0 65px 0;
+}
+
+.rule_li{
+    margin-left: 14px;
+    margin-bottom: 40px;
+}
+
+.admission .rule_li li{
+    margin: 0 0 20px 0;
+    list-style: square;
+    color: #787878;
+}
+
+.admission a{
+    border: 2px solid #000;
+    padding: 20px 70px;
+    font-family: bd;
+    margin-bottom: 210px;
+    transition: all .5s ease;
+}
+.admission a:hover{
+    background-color: #e5e5e5;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+/*guide line*/
+
+.guide_lines{
+    background-color: #1d1d1d;
+}
+.guide_lines h2{
+    padding: 190px 130px;
+    color: #fff;
+}
+
+.guide_lines li{
+    float: left;
+    width: 14.28%;
+}
+
+.guide_lines .icon{
+    margin: 0 auto;
+    width: 65px;
+    height: 65px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.guide_lines li:nth-child(1) .icon{
+    background-image: url(../img/ico_guideline_1.jpg);
+}
+.guide_lines li:nth-child(2) .icon{
+    background-image: url(../img/ico_guideline_2.jpg);
+}
+.guide_lines li:nth-child(3) .icon{
+    background-image: url(../img/ico_guideline_3.jpg);
+}
+.guide_lines li:nth-child(4) .icon{
+    background-image: url(../img/ico_guideline_4.jpg);
+}
+.guide_lines li:nth-child(5) .icon{
+    background-image: url(../img/ico_guideline_5.jpg);
+}
+.guide_lines li:nth-child(6) .icon{
+    background-image: url(../img/ico_guideline_6.jpg);
+}
+.guide_lines li:nth-child(7) .icon{
+    background-image: url(../img/ico_guideline_7.jpg);
+}
+
+.guide_lines .txt{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 180px 0;
+}
+
+
+/*floor guide*/
+.floor_guide h2{
+    background-image: url(../img/ml_visit_bg01.jpg);
+    background-size: cover;
+    padding: 190px 0 420px 0;
+    color: #fff;
+}
+#music_visit .floor_guide h2{
+    background-image: url(../img/ml_visit_bg01.jpg);
+}
+#design_visit .floor_guide h2{
+    background-image: url(../img/dl_visit_bg01.jpg);
+}
+#travel_visit .floor_guide h2{
+    background-image: url(../img/tl_visit_bg01.jpg);
+}
+#cooking_visit .floor_guide h2{
+    background-image: url(../img/cl_visit_bg01.jpg);
+}
+
+
+
+
+/*floorguide modal*/
+
+.tablinks{
+    text-align: center;
+}
+.tablinks h3{
+    margin: 35px 0 15px 0;
+    font-family: bd;
+    font-weight: 100;
+    font-size: 30px;
+}
+.tablinks p{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+}
+
+.tabcontent{
+    height: 1000px;
+    display: none;
+}
+
+.tabcontent img{
+    margin: 300px 0 0 90px;
+    float: left;
+}
+.tabcontent .text{
+    float: left;
+}
+.tabcontent .text{
+    margin-top: 400px;
+    margin-left: 180px;
+}
+.tabcontent .text h4{
+    font-size: 20px;
+    
+}
+.tabcontent .text p{
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 40px;
+    color: #666666;
+}
+
+.floor_tab{
+    width: 100%;
+    margin-top: -120px;
+    background-color: rgba(255,255,255,.9);
+    height: 120px;
+}
+
+.tablinks{
+    width: 240px;
+    height: 120px;
+    float: left;
+
+    cursor: pointer;
+}
+
+.tablinks.active{
+    background: #fff;
+}
+
+
+
+/*location*/
+.location {
+background-color: #f5f5f5;
+position: relative;
+}
+.location .text{
+    
+    width: 100%;
+    height: 860px;
+    display: table;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text .text_vertical{
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+.map{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.location h2{
+    margin: 0 0 80px 0;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.location .loc_p1{
+    font-family: bd;
+    margin: 0 0 35px 0;
+    font-size: 18px;
+}
+.location .loc_p2{
+    margin: 0 0 20px 0;
+    font-size: 20px;
+}
+
+.location .loc_p3{
+    line-height: 1.5;
+    font-size: 20px;
+    color: #666666;
+}
+
+
+/*qna*/
+
+.panel{
+    display: none;
+    transition: max-height 0.2s ease-out;
+}
+
+.faq h2{
+    text-align: left;
+    font-size: 30px;
+    margin: 0 0 50px; 0;
+}
+
+.qna_li{
+    border-top: 2px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 140px;
+}
+
+.qna_li .accordion{
+    padding: 40px;
+    border-bottom: 1px solid #dcdcdc;
+    cursor: pointer;
+}
+
+.qna_li .panel{
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 40px;
+    line-height: 1.5;
+}
+
+@media(max-width:768px){
+    .location .text{
+    margin-left: 30px;
+    width: 100%;
+    height: 360px;
+   
+}
+
+    .map{
+    position: static;
+        height: 500px;
+}
+    .map iframe{
+        height: 500px;
+    }
+    
+    .hour h2{
+        padding:100px 30px;
+
+    }
+    
+    .hour .center .col-6{
+        text-align: left;
+        margin-left: 30px;
+    }
+    
+    .tabcontent{
+        height: auto;
+        margin: 100px 0;
+    }
+    
+    .tabcontent img{
+        display: block;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .tabcontent .text{
+        float: none;
+        margin: 0 0 0 30px;
+    }
+    
+    
+    
+
+    .admission .col-6:last-child{
+        margin-bottom: 100px;
+    }
+    .guide_lines h2{
+  
+        padding: 100px 0 100px 30px;
+    }
+    .guide_lines li{
+        width: 50%;
+        height: 200px;
+    }
+    
+    .faq h2{
+        margin-left: 30px;
+    }
+    
+    
+}

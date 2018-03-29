@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css(2week)/reset.css">
+    <link rel="stylesheet" href="./css(2week)/travel.css">
+    <link rel="stylesheet" href="./css(2week)/fontsSin.css">
+    <link rel="stylesheet" href="./css(2week)/modal.css">
+</head>
+
+<body>
+
+   
+        <div class="header">
+            <div class="nav">
+                <div class="top_nav">
+                    <div class="logo"></div>
+                    <div class="search">
+                        <p>현대카드 라이브러리의 도서/음반을 검색해 보세요.</p>
+                    </div>
+                    <div class="cate">
+                        <a class="myBtn" id="loginBtn" href="#">로그인</a>
+                    </div>
+                </div>
+                <div class="bottom_nav">
+                    <ul>
+                        <li><a href="./index.html">HOME</a>
+
+                        </li>
+                        <li><a href="#">DESIGN LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="./design_main.html">DESIGN LIBRARY</a></li>
+                                <li><a href="./design_about.html">ABOUT</a></li>
+                                <li><a href="./design_books.html">BOOKS</a></li>
+                                <li><a href="./design_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./design_program.html">PROGRAM</a></li>
+                                <li><a href="./design_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TRAVEL LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">TRAVEL LIBRARY</a></li>
+                                <li><a href="./travel_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./travel_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./travel_program.html">PROGRAM</a></li>
+                                <li><a href="travel_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MUSIC LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">MUSIC LIBRARY</a></li>
+                                <li><a href="./music_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./music_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./music_program.html">PROGRAM</a></li>
+                                <li><a href="./music_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">COOKING LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">COOKING LIBRARY</a></li>
+                                <li><a href="./cooking_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./cooking_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./cooking_program.html">PROGRAM</a></li>
+                                <li><a href="./cooking_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+   
+    <div class="modal" id="modal_login">
+        <div class="modal_box login">
+            <div class="modal_content">
+                <span class="close_btn_login">
+                      <span class="x_line1"></span>
+                <span class="x_line2"></span>
+                </span>
+                <h2>Log in</h2>
+                <form action="POST" class="logIn">
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId"><br>
+                    <label for="userPw">패스워드</label>
+                    <input type="password" name="userPw"><br>
+                    <div class="bottom_input">
+                        <input type="checkbox" name="idSave">아이디 저장
+
+                        <a href="#">아이디 찾기 / 비밀번호 찾기</a><br> </div>
+                    <input type="submit" value="로그인"><br>
+
+
+
+                </form>
+                <div class="modal_line"></div>
+                <div class="resister">
+                    <p><strong>현대카드 LIBRARY에 처음오셨나요?</strong> <br>회원가입을 하셔야 서비스 이용이 가능 합니다.</p>
+                    <a href="#" class="resister_btn" id="regiBtn">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_register">
+        <div class="modal_box register">
+            <div class="modal_content">
+                <span class="close_btn_regi">
+                      <span class="x_line1"></span>
+                <span class="x_line2"></span>
+                </span>
+                <h2>Register</h2>
+                <form action="POST" class="logIn">
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId"><br>
+                    <label for="userPw">패스워드</label>
+                    <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                    <label for="userPw">패스워드<br>재확인</label>
+                    <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                    <div class="modal_line"></div>
+                    <label for="userName">이름</label>
+                    <input type="text" name="userName"><br>
+                    <label for="userGender">성별</label>
+                    <input type="radio" name="userGender" value="man" checked> 남
+                    <input type="radio" name="userGender" value="woman"> 여<br>
+
+                    <label for="userMail">이메일</label>
+                    <input type="text" name="userMail"><br>
+                    <label for="userBirth">생년월일</label>
+                    <select name="userYear">
+                            <option value="default">-----</option>
+                        </select> 년
+                    <select name="userMonth">
+                            <option value="default">--</option>
+                        </select> 월
+                    <select name="userDate">
+                            <option value="default">--</option>
+                        </select> 일
+                    <br>
+                    <div class="modal_line"></div>
+                    <label for="userPhone[]">전화번호</label>010 -
+                    <input type="text" name="userPhone"> -
+                    <input type="text" name="userPhone">
+                    <br><br>
+
+                    <input type="submit" value="회원가입"><br>
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="aboutWrapTitleDiv">
+        <h3>ABOUT</h3>
+    </div>
+
+
+    <div class="aboutWrap">
+
+
+
+
+
+
+        <div class="aboutWrapTxtDiv">
+            <h3>발견의 시간 + 영감의 공간</h3>
+            <p>잠시 현실의 속도에서 벗어나 종이 책이 지닌 질감과 무게,오래될수록 깊이를 더하는 서향(書香)과 책장의 사각거림속에 머무르는 공간.발견과 영감의 시공간, 현대카드 라이브러리이다.여행은 라이프스타일 전 영역에 걸쳐 영감을 줄 수 있는 주제인 동시에, 이질적인 문화와 세계를 이해하는 열쇠라는 점에서 아날로그 책의 가치와 닮아 있다.현대카드는 우리의 지성과 감성을 확장하는 창조의 동력으로 모험 정신을 주목하고, 지루한 일상의 궤도에서벗어나 새로운 삶의 좌표를 발견할 수 있는 영감의 공간으로 트래블 라이브러리를 제안한다.이 아날로그 책의 숲에 서는 순간, 오래 전 잃어버린 여행자의 본능과 함께 멈춰버린 내면의 나침반이 다시금 작동하기 시작할 것이다.</p>
+        </div>
+
+
+        <div class="aboutWrapImgDiv">
+            <div class="parallax-window parallaxSec1" data-parallax="scroll" data-image-src="./img/tl_about_cont01.jpg" data-position="top"></div>
+            <div class="parallax-window parallaxSec2" data-parallax="scroll" data-image-src="./img/tl_about_cont02.jpg" data-position="top"></div>
+            <div class="parallax-window parallaxSec3" data-parallax="scroll" data-image-src="./img/tl_about_cont03.jpg" data-position="top"></div>
+            <div class="parallax-window parallaxSec4" data-parallax="scroll" data-image-src="./img/tl_about_cont04.jpg" data-position="top"></div>
+            <div class="parallax-window parallaxSec5" data-parallax="scroll" data-image-src="./img/tl_about_cont05.jpg" data-position="top"></div>
+            <div class="parallax-window parallaxSec6" data-parallax="scroll" data-image-src="./img/tl_about_cont06.jpg" data-position="top"></div>
+        </div>
+    </div>
+
+    <div class="principle">
+
+        <h3>PRINCIPLES</h3>
+        <p>여행서의 가치, 분석적 사고에 기반한 장서의 절대 기준</p><br>
+        <p>서가의 어떤 공간에서든, 무심코 펼쳐 든 페이지 한 장에서조차 영감을 얻을 수 있는, 가치있는 컬렉션이 완성하기 위해 현대카드가 정립한 큐레이팅의 5가지 원칙은 다음과 같다.</p>
+        <p>"영감을 줄 수 있고(Inspiring), 호기심을 자극하며(Intriguing), 필요한 정보의 제공 뿐 아니라 지식을 넓혀주고(Useful), 전문적인 리서치에 바탕을 둔 충실한(Reliable) 책이어야 한다.</p>
+        <p>또한 여행의 최신 흐름을 반영하는 책과 시대를 뛰어넘는 여행의 명저(Timeless yet Timely)를 모두 아울러야 한다."</p>
+    </div>
+
+
+    <div class="tlTabContainer">
+
+
+        <!--탭-->
+        <ul class="tabs">
+            <li class="tab-link current" data-tab="tab1">1 Inspiring</li>
+            <li class="tab-link" data-tab="tab2">2 Instriguing</li>
+            <li class="tab-link" data-tab="tab3">3 Useful</li>
+            <li class="tab-link" data-tab="tab4">4 Reliable</li>
+            <li class="tab-link" data-tab="tab5">5 Timeless yet timely</li>
+        </ul>
+        <!--탭 내용-->
+        <div id="tab1" class="tabContent current">
+            <div class="tabEn">
+                <h3>Good books stimulate<br>and provoke,<br>not just educate.</h3>
+            </div>
+            <div class="tabKo">
+                <p>좋은 여행책은 영감을 깨우고 자극한다.<br> 영감을 주고 상상력을 자극하는 책을 선택할 것.<br> 단순한 정보전달에 그치지 않고 다양한 문화를 발견하게 하는 책,<br> 독자로 하여금 여행을 계획하게 하고 세상을 알고 싶게 만드는 책이 좋은 여행책이다.</p>
+            </div>
+
+        </div>
+        <div id="tab2" class="tabContent">
+            <div class="tabEn">
+                <h3>Choose books that<br>can intrigue readers<br>and open the door<br>to the world.</h3>
+            </div>
+            <div class="tabKo">
+                <p>좋은 여행책은 독자들의 호기심을 자극하여 새로운 세계로 초대한다.
+                    <br>좋은 여행서적은 독자의 호기심을 자극할 뿐 아니라,
+                    <br>여행자의 느낌을 생생하게 전달함으로써 독자로 하여금
+                    <br>자신에게 익숙한 장소를 떠나 열린 마음으로 세계를 알아가도록 도와준다.</p>
+            </div>
+        </div>
+        <div id="tab3" class="tabContent">
+            <div class="tabEn">
+                <h3>Select books that<br>provide useful information<br>and broaden<br>reader's knowledge.</h3>
+            </div>
+            <div class="tabKo">
+                <p>좋은 여행책은 필요한 정보를 제공하고 독자의 지식을 넓혀준다.
+                    <br>좋은 여행서적은 실용적인 정보를 통해 여행을 더욱 풍부하게 할 뿐 아니라,
+                    <br>수준높은 지식을 통해 우리가 사는 세계의
+                    <br>보는 눈을 새롭게 해준다.</p>
+            </div>
+        </div>
+        <div id="tab4" class="tabContent">
+            <div class="tabEn">
+                <h3>Thoroughly researched<br>books that provide<br>reliable informarion.</h3>
+            </div>
+            <div class="tabKo">
+                <p>전문적인 리서치에 바탕을 둔 충실한 책.
+                    <br>지역저 특이성에만 초점을 맞춘 채 개인적인 감상으로 내용을 채운 책보다는,
+                    <br>주제를 철저히 연구하고, 신뢰할 수 있는 출처에서 얻은 충실한 정보를 바탕으로
+                    <br>깊이 있는 경험을 제공하는 다층적인 서적을 선택할 것.</p>
+            </div>
+        </div>
+        <div id="tab5" class="tabContent">
+            <div class="tabEn">
+                <h3>Look for new trends<br>in travel, <br>but don't miss <br>timeless classics.</h3>
+            </div>
+            <div class="tabKo">
+                <p>여행의 최신 흐름을 반영하는 책, 시대를 뛰어넘는 여행의 명저.
+                    <br>여행의 최신 흐름을 눈여겨 볼 것.
+                    <br>새롭게 주목받는 주제나 지역을 다루는 사의적절한 책을 찾되,
+                    <br>시대가 지나도 변치않는 명저들 또한 놓치지 말것.</p>
+            </div>
+
+        </div>
+
+
+        <div class="curatorWrap">
+            <div class="curatorTitle">
+                <h3>CURATORS</h3>
+                <p>글로벌 북 큐레이터로 도서 선정에 전문성을 확보하다</p>
+            </div>
+
+            <div class="curatorSlider">
+                <div><img src="https://dummyimage.com/1080x460/000/fff" alt="슬라이드1"></div>
+                <div><img src="https://dummyimage.com/1080x460/000/fff" alt="슬라이드2"></div>
+                <div><img src="https://dummyimage.com/1080x460/000/fff" alt="슬라이드3"></div>
+                <div><img src="https://dummyimage.com/1080x460/000/fff" alt="슬라이드4"></div>
+            </div>
+
+        </div>
+
+
+
+        <!--자바스크립트 임포트-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./js/parallax.min.js"></script>
+        <script src="./js/tl.js">
+
+
+        </script>
+        <!--http://pixelcog.github.io/parallax.js/ parallax mit 라이센스-->
+
+
+        <script>
+            // Get the modal
+            var modalLogin = document.getElementById('modal_login');
+            var modalRegi = document.getElementById('modal_register');
+            // Get the button that opens the modal
+            var loginBtn = document.getElementById("loginBtn");
+            var RegiBtn = document.getElementById("regiBtn");
+            // Get the <span> element that closes the modal
+            var closeLogin = document.getElementsByClassName("close_btn_login")[0];
+            var closeRegi = document.getElementsByClassName("close_btn_regi")[0];
+
+            // When the user clicks on the button, open the modal 
+            loginBtn.onclick = function() {
+                modalLogin.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modalLogin) {
+                    modalLogin.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, open the modal 
+            regiBtn.onclick = function() {
+                modalRegi.style.display = "block";
+                modalLogin.style.display = "none";
+            }
+
+            closeLogin.onclick = function() {
+
+                modalLogin.style.display = "none";
+            }
+            closeRegi.onclick = function() {
+                modalRegi.style.display = "none";
+
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modalRegi) {
+                    modalRegi.style.display = "none";
+                    modalLogin.style.display = "none";
+                }
+            }
+
+        </script>
+</body>
+
+</html>

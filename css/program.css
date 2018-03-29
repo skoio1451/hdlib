@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@font-face {
+
+    font-family: nf;
+    src: url('YouandiModernTR.ttf');
+}
+
+@font-face {
+
+    font-family: bd;
+    src: url('YouandiModernHB.ttf');
+}
+
+body {
+    font-family: nf;
+}
+
+#Pgwrap {
+    width: 100%;
+    height: auto;
+  
+}
+
+
+.PGsectionWrap {
+    width: 1200px;
+    height: auto;
+  
+    margin: 0 auto;
+
+}
+
+.PGsectionWrap .PGsection.top {
+    overflow: hidden;
+}
+
+.PGsectionWrap .PGsection.top .PGtitle {
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+    margin: 100px 0px;
+    font-family: bd;
+
+
+}
+.PGsectionWrap .PGsection.top > ul{
+    
+}
+
+.PGsectionWrap .PGsection.top > ul > li {
+    float: left;
+    margin-top: 30px;
+    height: 30px;
+    margin-right: 30px;
+}
+
+
+.PGsectionWrap .PGsection.top > ul > li >a{
+  
+    font-size: 18px;
+     color:#c4c4c4;
+    height: 30px;
+   
+
+}
+
+
+
+.PGline{
+    width:100%;
+    height: 1px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    top:305px;
+}
+
+.PGsection.main .subTit{
+    color: #000;
+    margin: -4px 0 28px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top:20px;
+}
+
+
+.PGsection.main .PGimg{
+    background-image: url(../img/djing.png);
+    width:1200px;
+    height: 400px;
+    background-size: cover;
+    
+}
+
+
+
+.PGsection.bottom .text_pre{
+    font-family: nf;
+    color: #787878;
+    font-size: 16px;
+    line-height: 26px;
+    
+}
+
+.PGsectionWrap .PGsection.top > ul > li.menu>a:hover{
+    border-bottom: 4px solid;
+    color:#000;
+   
+    padding-bottom: 6px;
+}
+
+.PGfooter{
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+

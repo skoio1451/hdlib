@@ -1,0 +1,382 @@
+@charset "utf-8";
+@font-face {
+
+font-family: nf;
+src:url('../YouandiModernTR.ttf');
+}
+
+@font-face {
+
+font-family: bd;
+src:url('../YouandiModernHB.ttf');
+}
+.center{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#wrap{
+   width: 100%;
+   height: 100%;
+    font-family: nf;
+}
+.nav2{
+    margin-top: 100px;
+    width: 100%;
+    height: 800px;
+    background: url(http://library.hyundaicard.com/rsc/library/images/dl/dl_visual_wd.jpg) no-repeat;
+    background-size: cover;
+}
+.section{
+   width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/*nav 시작*/
+.nav2 .navOverlap{
+    width: 100%;
+    height: 800px;
+    background: #00000054;
+}
+.nav2 .contentNav{
+    color: #fff;
+    width: 75%;
+    padding: 150px 4%;
+   
+}
+.nav2 .contentNav p.p1{
+    font-weight: 900;
+}
+.nav2 .contentNav p.p2{
+     font-family:bd;
+    font-weight: 100;
+    font-size: 47px;
+    line-height: 41px
+}
+.nav2 .navMiddle{
+    padding-top: 10%;
+}
+.nav2 .navMiddle p.navMT{
+     font-family:bd;
+    font-weight: 100;
+    font-size: 30px;
+}
+.nav2 .navMiddle p.navMU{
+    padding-top: 5%;
+    font-size: 15px;
+    line-height: 20px;
+}
+.nav2 .navUnder{
+    padding-top: 10%;
+}
+.nav2 .navUnder span{
+    font-size: 14px;
+    padding: 20px 10%;
+    background: #000;
+    margin-right: 2%;
+    cursor: pointer;
+    transition: all 3s;
+}
+.nav2 .navUnder span:hover{
+    background: #ccc;
+    box-shadow: 1px 5px 10px #000a;
+}
+
+/*section 시작*/
+.section .TopTxt{
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+}
+.section h1{
+    font-family: bd;
+    font-size: 55px;
+    font-weight: 100;
+    padding-top: 100px;
+}
+.section h2{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.section .secBox{
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 3%;
+    font-weight: 100;
+    background: #000;
+    position: absolute;
+    bottom: 100px;
+    left: 37%;
+    cursor: pointer;
+}
+.section .secBox:hover{
+    background: #ccc;
+    box-shadow: 1px 5px 10px #000a;
+}
+/*sec1 시작*/
+.section.sec1{
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    background: #f5f5f5;
+}
+.section.sec1 ul.gallMedia{
+    overflow: hidden;
+}
+.section.sec1 ul.gallMedia>li{
+    width: 100%;
+    height: 500px;
+    float: left;
+}
+.section.sec1 ul.gallMedia>li:nth-child(1){
+    background: url(../img/bg0.jpg) no-repeat;
+}
+.section.sec1 .menu{
+    overflow: hidden;
+    height: 50px;
+    background: #000a;
+    position: relative;
+    top: -50px;
+}
+.section.sec1 .menu ul{
+    width: 150px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+.section.sec1 .menu ul>li{
+    float: left;
+    color: #ccc;
+    padding: 0 10px;
+}
+.section.sec1 .sec1Txt ul{
+    text-align: center;
+}
+.section.sec1 .sec1Txt ul p.sec1TxtTop{
+    font-size: 30px;
+    font-family: bd;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+/*sec2 시작*/
+.section.sec2{
+    width: 100%;
+    height: 460px;
+    background: #e8e8e8;
+}
+.section.sec2 .sec2Gallery{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.section.sec2 .sec2Gallery ul>li{
+    float: left;
+    width: 14.28%;
+    height: 150px;
+}
+.section.sec2 .sec2Gallery ul>li:nth-child(1){
+    background: url(../img/bg_0.png) no-repeat;
+}
+.section.sec2 .sec2Gallery ul>li:nth-child(2){
+    background: url(../img/bg_1.png) no-repeat;
+}
+.section.sec2 .sec2Gallery ul>li:nth-child(3){
+    background: url(../img/bg_2.png) no-repeat;
+}
+.section.sec2 .sec2Gallery ul>li:nth-child(4){
+    background: url(../img/bg_3.png) no-repeat;
+}
+.section.sec2 .sec2Gallery ul>li:nth-child(5){
+    background: url(../img/bg_4.png) no-repeat;
+}
+.section.sec2 .sec2Gallery ul>li:nth-child(6){
+    background: url(../img/bg_5.png) no-repeat;
+}
+.section.sec2 .sec2Gallery ul>li:nth-child(7){
+    background: url(../img/bg_6.png) no-repeat;
+}
+/*sec3 시작*/
+.section.sec3{
+    background: #f5f5f5;
+    height: 1200px;
+}
+.section.sec3 .media ul{
+    overflow: hidden;
+    position: relative;
+}
+.section.sec3 .media ul>li{
+    float: left;
+    width: 100%;
+    height: 550px;
+}
+.section.sec3 .sec3Content{
+    color: #fff;
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+}
+.section.sec3 .media ul>li:nth-child(1){
+   background: url(../img/bg3_0.jpg) no-repeat;  
+}
+.section.sec3 .sec3Content p.txt1Sec3{
+    font-family: bd;
+    font-size: 25px;
+}
+.section.sec3 .sec3Content p.txt2Sec3{
+   opacity: 0.5;
+    font-size: 20px;
+}
+.section.sec3 .sec3Content p.txt3Sec3{
+    margin-top: 20px;
+    opacity: 0.8;
+}
+.section.sec3 .sec3Content p.txt4Sec3{
+    margin-top: 10px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+/*sec4 시작*/
+.section.sec4{
+    width: 100%;
+    height: 1900px;
+    background: #f5f5f5;
+}
+.section.sec4 .sec4Box1{
+    background: url(../img/bg4_1.jpg) no-repeat;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.section.sec4 .sec4Box1 ul.sec4content>li{
+    float: left;
+    height: 700px;
+    color: #fff;
+}
+.section.sec4 .sec4Box1 ul.sec4content>li.sec4contentLeft{
+    width: 30%;
+    padding-left: 10%;
+}
+.section.sec4 .sec4Box1 ul.sec4content>li.sec4contentLeft p.sec4Toptxt{
+  margin-top: 100px;
+    margin-bottom: 30px;
+  font-size: 17px;
+}
+.section.sec4 .book{
+    height: 200px;
+}
+.section.sec4 .book img{
+    width: 154px;
+    height: 203px;
+}
+.section.sec4 .sec4Box1 ul.sec4content>li.sec4contentLeft p.sec4Under{
+    margin-top: 20px;
+    font-family: bd;
+}
+.section.sec4 .sec4Box1 ul.sec4content>li.sec4contentRight{
+    width: 60%;
+    font-size: 19px;
+    font-weight: 600;
+     margin-top: 120px;
+    line-height: 50px;
+    overflow: hidden;
+}
+ul.sec4content>li.sec4contentRight p{
+    float: left;
+}
+ul.sec4content>li.sec4contentRight  .sec4Num1 p.num{
+    margin-right: 10%;
+}
+ul.sec4content>li.sec4contentRight p.m{
+    margin-right: 20%
+}
+.section.sec4 .sec4Box2 .sec4top{
+    font-size: 20px;
+    overflow: hidden;
+}
+.section.sec4 .sec4Box2 .sec4top >li{
+    float: left;
+    padding-top: 5%;
+    padding-bottom: 2%
+}
+.section.sec4 .sec4Box2 .sec4top ul{
+    width: 100%;
+}
+.section.sec4 .sec4Box2 .sec4top >li:nth-child(1){
+    width: 50%;
+    text-align: center;
+}
+.section.sec4 .sec4Box2 .sec4top >li:nth-child(2){
+    width: 50%;
+    text-align: center;
+}
+.section.sec4 .sec4Box2{
+    overflow: hidden;
+}
+.section.sec4 .sec4Box2 .sec4Bar{
+    margin-top: 10px;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    float: left;
+}
+.section.sec4 .sec4Box2 .sec4Bar2{
+     margin-top: 10px;
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+.section.sec4 .sec4mid{
+    margin-top:50px;
+    background: #fff;
+    width: 60%;
+    height: 500px;
+}
+.section.sec4 .sec4mid .section.sec4 li.aboutBook ul>li{
+    float: left;
+}
+.section.sec4 .sec4mid .sec4content2Right{
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+.section.sec4 .sec4mid .sec4content2Right img.backbook{
+    width: 60%;
+    height: 500px;
+}
+.section.sec4 .sec4mid .sec4content2Right img.mainbook{
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    
+}
+.section.sec4 .sec4mid .sec4M{
+    float: left;
+}
+.section.sec4 .sec4mid .sec4content2Left{
+    width: 50%;
+    height: 500px;
+}
+.sec4content2Left p.sec4Top2{
+    margin-top: 100px;
+    font-size: 25px;
+    font-family: bd;
+    font-weight: 800;
+}
+.sec4content2Left p.sec4Mid2{
+    margin-top: 20px;
+    color: #000a;
+}
+.sec4content2Left p.sec4Under2{
+    margin-top: 100px;
+    color: #000a;
+    font-size: 15px;
+}
+/*sec5 시작*/
+.section.sec5{
+    width: 100%;
+    height: 600px;
+    background: #e8e8e8;
+}

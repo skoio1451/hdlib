@@ -1,0 +1,435 @@
+@charset "utf-8";
+
+
+@font-face {
+
+    font-family: nf;
+    src: url('YouandiModernTR.ttf');
+}
+
+@font-face {
+
+    font-family: bd;
+    src: url('YouandiModernHB.ttf');
+}
+
+body {
+    font-family: nf;
+}
+
+#wrap {
+    width: 100%;
+    height: auto;
+
+
+
+}
+
+
+.section.CKabout {
+    width: 100%;
+    height: auto;
+
+}
+
+
+.CKaboutWrap1 {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.CKaboutWrap1 h1 {
+
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 110px;
+   font-weight: bolder;
+}
+
+.CKaboutWrap1 > ul > li {
+    width: 50%;
+    height: 508px;
+    float: left;
+    margin-bottom: 210px;
+
+}
+
+
+
+.CKaboutWrap1 .CKwrap1 {
+    height: 600px;
+    background-image: url(../img/cl_about_cont01.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+.CKaboutWrap1 .CKwrap2 {
+    height: 510px;
+    background-image: url(../img/cl_about_cont02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+.CKaboutWrap1 .CKwrap3 {
+    height: 610px;
+    background-image: url(../img/cl_about_cont03.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+.CKaboutWrap1 .CKwrap4 {
+    height: 510px;
+    background-image: url(../img/cl_about_cont04.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+
+}
+
+.CKaboutWrap1 .CKwrap5 {
+    height: 710px;
+    background-image: url(../img/cl_about_cont05.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+
+}
+
+.CKaboutWrap1 .CKwrap6 {
+    height: 510px;
+    background-image: url(../img/cl_about_cont06.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+
+}
+
+.CKaboutWrap1 .CKwrap7 {
+    height: 510px;
+    background-image: url(../img/cl_about_cont07.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+.CKaboutWrap1 .CKwrap8 {
+    height: 510px;
+    background-image: url(../img/cl_about_cont08.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+.CKaboutWrap1 .CKwrap9 {
+    height: 510px;
+    background-image: url(../img/cl_about_cont09.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+.CKaboutWrap1 > ul > li .txtMain {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    font-family: bd;
+
+
+}
+
+.CKaboutWrap1 > ul > li .txtSub {
+    font-size: 20px;
+    line-height: 30px;
+    color: #787878;
+
+}
+
+.CKaboutWrap1 > ul > li .txtSub.short {
+    line-height: 26px;
+    font-size: 18px;
+    letter-spacing: -1.5px;
+    font-size: 18px;
+
+}
+
+.CKaboutWrap1 > ul > li .txtSub .bold {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #222222;
+    margin-top: 20px;
+}
+
+.section.CKprinciple {
+    width: 100%;
+    height: auto;
+    background-color: #323232;
+
+
+}
+
+.CKprinciple .CKaboutWrap2 {
+    width: 1200px;
+    height: 310px;
+    
+    margin: 0 auto;
+
+}
+
+.CKprinciple .CKaboutWrap2 .sub {
+    font-size: 60px;
+    text-align: center;
+    line-height: 150px;
+    color: #fff;
+    margin-top: 0px;
+
+}
+
+.CKprinciple .CKaboutWrap2 .sub1 {
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+
+
+}
+
+.CKprinciple .CKaboutWrap2 .sub2 {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0px;
+    color: #fff;
+
+}
+
+
+
+.CKaboutWrap2 .CKPtxt > a {
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 800;
+    transition: color .25s;
+
+
+}
+
+.CKprincipleimg {
+    height: 500px;
+    background-image: url(../img/dl_most_populor.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+.CKprincipleimg .CKaboutWrap2 {
+    overflow: hidden;
+}
+
+
+
+.CKprincipleimg .CKaboutWrap2 > ul > li {
+    float: left;
+    margin: 70px 70px 120px 10px;
+}
+
+
+.CKaboutWrap2 > ul > li a:hover {
+
+    color: #fff;
+
+
+}
+
+.CKaboutWrap2-1 {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.CKaboutWrap2-1 > ul > li {
+
+
+    float: left;
+    margin-left: 40px;
+
+
+}
+
+
+.CKPtxt_sub li .a {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 20px;
+
+}
+
+.CKPtxt_sub li .b {
+    width: 1px;
+    height: 110px;
+    background-color: #fff;
+
+}
+
+.CKPtxt_sub li .c {
+    margin: 20px 0px;
+    color: #fff;
+    line-height: 23px;
+
+}
+
+
+.section.CKcurators {
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    padding-top: 50px;
+}
+
+
+.CKcurators .CKaboutWrap3 {
+    width: 1300px;
+    margin: 0 auto;
+
+}
+
+
+.CKcurators .CKaboutWrap3 p {
+    font-size: 60px;
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold;
+
+
+}
+
+.CKcurators .CKaboutWrap3 .CKC_sub {
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+.CKcurators .CKaboutWrap3 .CKC_box {
+    width: 1300px;
+    height: 730px;
+    background-color: #fff;
+    margin: 77px 0px;
+    position: relative;
+
+}
+
+.CKcurators .CKaboutWrap3 .CKC_box .CKC_img {
+    width: 587px;
+    height: 476px;
+    background-image: url(../img/20171203140704323.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: absolute;
+    left: 77px;
+    top: 77px;
+
+}
+
+.CKcurators .CKaboutWrap3 .CKC_box .CKC_Mtxt {
+    color: #000;
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    left: 728px;
+    top: 215px;
+
+}
+
+
+.CKcurators .CKaboutWrap3 .CKC_box .CKC_Mtxt2 {
+    font-size: 16px;
+    color: #000;
+    line-height: 28px;
+    position: absolute;
+    left: 728px;
+    top: 314px;
+}
+
+.CKC_box ul {
+    position: relative;
+    left: 77px;
+    top: 570px;
+}
+
+.CKcurators .CKaboutWrap3 .CKC_box ul li {
+    width: 210px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid#000;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    margin-right: 30px;
+    transition: all 0.3s;
+}
+
+.CKcurators .CKaboutWrap3 .CKC_box ul li:hover {
+    background-color: #e5e5e5;
+    box-shadow: 5px 5px 10px #e5e5e5;
+
+}
+
+.CKcurators .CKaboutWrap3 .cirWrap {
+    margin-left: 50%
+}
+
+.CKcurators .CKaboutWrap3 .cir li {
+    width: 10px;
+    height: 10px;
+    background-color: #222222;
+    border-radius: 50%;
+    float: left;
+    margin: 0px 5px 0px 5px;
+    position: relative;
+    top: -50px;
+
+
+
+}
+
+.CKcurators .CKC_arrow {
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/btnbk_right_arr.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+    left: 1265px;
+    top: -450px;
+
+}
+
+
+.CKfooter {
+    width: 100%;
+    height: 200px;
+    background-color: #111;
+}

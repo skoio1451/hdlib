@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HIGHLIGHTSPOT</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cooking_highlightspot.css">
+    <link rel="stylesheet" href="css/headerfooter2.css">
+</head>
+
+<body>
+    <!-- header부분 -->
+
+
+    <div class="header">
+        <div class="nav">
+            <div class="top_nav">
+                <div class="logo"></div>
+                <div class="search">
+                    <p>현대카드 라이브러리의 도서/음반을 검색해 보세요.</p>
+                </div>
+                <div class="cate">
+                    <a class="myBtn" id="loginBtn" href="#">로그인</a>
+                </div>
+            </div>
+            <div class="bottom_nav">
+                <ul>
+                    <li><a href="./index.html">HOME</a>
+
+                    </li>
+                    <li><a href="#">DESIGN LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="./design_main.html">DESIGN LIBRARY</a></li>
+                            <li><a href="./design_about.html">ABOUT</a></li>
+                            <li><a href="./design_books.html">BOOKS</a></li>
+                            <li><a href="./design_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./design_program.html">PROGRAM</a></li>
+                            <li><a href="./design_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TRAVEL LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">TRAVEL LIBRARY</a></li>
+                            <li><a href="./travel_about.html">ABOUT</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="./travel_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./travel_program.html">PROGRAM</a></li>
+                            <li><a href="travel_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MUSIC LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">MUSIC LIBRARY</a></li>
+                            <li><a href="./music_about.html">ABOUT</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="./music_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./music_program.html">PROGRAM</a></li>
+                            <li><a href="./music_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">COOKING LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">COOKING LIBRARY</a></li>
+                            <li><a href="./cooking_about.html">ABOUT</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="./cooking_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./cooking_program.html">PROGRAM</a></li>
+                            <li><a href="./cooking_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_login">
+        <div class="modal_box login">
+            <div class="modal_content">
+                <span class="close_btn_login">
+                      <span class="x_line1"></span>
+                <span class="x_line2"></span>
+                </span>
+                <h2>Log in</h2>
+                <form action="POST" class="logIn">
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId"><br>
+                    <label for="userPw">패스워드</label>
+                    <input type="password" name="userPw"><br>
+                    <div class="bottom_input">
+                        <input type="checkbox" name="idSave">아이디 저장
+
+                        <a href="#">아이디 찾기 / 비밀번호 찾기</a><br> </div>
+                    <input type="submit" value="로그인"><br>
+
+
+
+                </form>
+                <div class="modal_line"></div>
+                <div class="resister">
+                    <p><strong>현대카드 LIBRARY에 처음오셨나요?</strong> <br>회원가입을 하셔야 서비스 이용이 가능 합니다.</p>
+                    <a href="#" class="resister_btn" id="regiBtn">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_register">
+        <div class="modal_box register">
+            <div class="modal_content">
+                <span class="close_btn_regi">
+                      <span class="x_line1"></span>
+                <span class="x_line2"></span>
+                </span>
+                <h2>Register</h2>
+                <form action="POST" class="logIn">
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId"><br>
+                    <label for="userPw">패스워드</label>
+                    <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                    <label for="userPw">패스워드<br>재확인</label>
+                    <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                    <div class="modal_line"></div>
+                    <label for="userName">이름</label>
+                    <input type="text" name="userName"><br>
+                    <label for="userGender">성별</label>
+                    <input type="radio" name="userGender" value="man" checked> 남
+                    <input type="radio" name="userGender" value="woman"> 여<br>
+
+                    <label for="userMail">이메일</label>
+                    <input type="text" name="userMail"><br>
+                    <label for="userBirth">생년월일</label>
+                    <select name="userYear">
+                            <option value="default">-----</option>
+                        </select> 년
+                    <select name="userMonth">
+                            <option value="default">--</option>
+                        </select> 월
+                    <select name="userDate">
+                            <option value="default">--</option>
+                        </select> 일
+                    <br>
+                    <div class="modal_line"></div>
+                    <label for="userPhone[]">전화번호</label>010 -
+                    <input type="text" name="userPhone"> -
+                    <input type="text" name="userPhone">
+                    <br><br>
+
+                    <input type="submit" value="회원가입"><br>
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 하이라이트 본문 -->
+
+    <div id="wrap">
+        <h1>
+            HIGHLIGHT SPOT
+        </h1>
+        <div class="section sec1">
+            <div class="text">
+                <h2>
+                    360 VR TOUR
+                </h2>
+                <p>
+                    마우스로 화면을 상하좌우로 움직여 360VR Space Tour 영상을 감상하세요.
+                </p>
+                <iframe id="movie" src="https://my.matterport.com/show/?m=ybW4Ef2fvLb&help=0&play=1&qs=1" width="100%" height="674px" frameborder="0"></iframe>
+                <p>
+                    사용자의 PC, 브라우저 환경에 따라 360VR 동영상 이용에 제한이 있을 수 있습니다.
+                </p>
+                <p>
+                    Internet Explorer, Chrome, Firefox 최신 브라우저 이용을 권장합니다.
+                </p>
+            </div>
+        </div>
+        <div class="section sec2">
+
+            <div class="content">
+                <div class="text txt1">
+                    <h4>Award Collection Chefs·Food Writers<br><br></h4>
+                    <p>Award Collection은 세계 쿡북 어워드의 양대산맥인, James Beard Award와 IACP Award의 모든 수상작을 커버한다. 이 1000여 권의 책을 수상 카테고리에 따라 비치하여, 쿡북과 쿠킹 트렌드의 흐름을 파악할 수 있다. Chefs·Food Writers 컬렉션은 전설적인 셰프나 미슐랭에서 인정받은 셰프, 또는 셀레브리티 셰프 등 200여 명의 셰프·푸드라이터를 선정하여 그들의 저서를 저자별로 모아놓은 컬렉션인데, 유명한 사람들이 즐비한 쿠킹업계의 특징이 반영되었다.</p>
+                </div>
+
+                <div class="text txt2">
+                    <h4>Ingredients House<br><br></h4>
+                    <p>Ingredients House는 190여 종의 향신료, 허브, 소금, 오일을 모아 놓은 곳이다. 직접 만지고, 냄새를 맡고, 맛 보면서 오감으로 식재료를 이해하고, 공감각적으로 흥미로운 경험을 할 수 있다.</p>
+                </div>
+                <div class="text txt3">
+                    <h4>Untitled2013 (How to Cook a Wolf)<br><br></h4>
+                    <p>M.F.K Fisher의 책 제목이기도 한 아트워크 'Untitled2013 (How To Cook a Wolf)'는 아르헨티나 태생의 태국 작가 리크 리트의 작품이다. M.F.K Fisher의 저서 'How to Cook a Wolf' 속의 레시피로 만든 음식 사진이 전시되어 있고, 음식의 레시피가 있는 페이지에는 클립을 꽂아두었다.<br><br></p>
+                </div>
+                <div class="text txt4">
+                    <h4>Artwork 2 - Mind Over Matter<br><br></h4>
+                    <p>서가 벽면에 설치한 현대 미술가 듀오 엘름그린&드라그셋의 작품. 이 작품에서 발코니는 사적인 주거공간의 연장선상에 있는 공간이지만, 발코니에서 일어나는 행위는 외부로 공개된다는 점에서 경계와 관계에 대해 생각해 보게끔한다.</p>
+                </div>
+                <div class="text txt5">
+                    <h4>쿠킹 클래스와 셀프 쿠킹이 진행되는 2개의 부엌<br><br></h4>
+                    <p>쿠킹 클래스와 셀프쿠킹을 진행할 수 있는 2개의 부엌으로, 3층에는 총 8개의 스테이션이 준비되어 있어, 개인용 오븐/화구/싱크를 가지고 완결된 요리 경험을 할 수 있다. 4층에는 총 4개의 실습·시연대가 한개의 테이블로 크게 연결되어 있어, 강사와 수강생 간 보다 친밀한 커뮤니케이션이 가능하다.</p>
+                </div>
+
+                <div class="img">
+                    <ul>
+                        <li class="img_1"></li>
+                        <li class="img_2"></li>
+                        <li class="img_3"></li>
+                        <li class="img_4"></li>
+                        <li class="img_5"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- footer 부분 -->
+
+    <div class="footer">
+        <div class="ftop">
+            <ul>
+                <li>NOTICE　　　</li>
+                <li><a href="#">ㅣ　　2018.02.14  [ Library Home ]  현대카드 LIBRARY 설연휴 휴관 안내　　></a></li>
+                <li class="line"></li>
+            </ul>
+        </div>
+        <div class="btop">
+            <ul>
+                <li class="img"><img src="img/foot_logo.png" alt=""></li>
+                <li class="txt1">서울특별시 영등포구 의사당대로3 현대캐피탈빌딩 | 대표이사 정태영</li>
+                <li class="txt2">사업자등록번호 213-86-15419 ⓒ HYUNDAI CARD Corp</li>
+                <li class="box">
+                    <a href="">패밀리</a>
+                    <span class="icon"></span>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- 자바스크립트 스크롤 부분 -->
+
+    <script src="./js/scroll.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var el = document.querySelector('.content .text.txt1');
+
+            if (window.scrollY >= 500 && window.scrollY <= 1800) el.classList.add('shown');
+            else el.classList.remove('shown');
+        });
+
+        window.addEventListener('scroll', function() {
+            var el = document.querySelector('.content .text.txt2');
+
+            if (window.scrollY >= 1300 && window.scrollY <= 2400) el.classList.add('shown');
+            else el.classList.remove('shown');
+        });
+
+        window.addEventListener('scroll', function() {
+            var el = document.querySelector('.content .text.txt3');
+
+            if (window.scrollY >= 2000 && window.scrollY <= 3000) el.classList.add('shown');
+            else el.classList.remove('shown');
+        });
+
+        window.addEventListener('scroll', function() {
+            var el = document.querySelector('.content .text.txt4');
+
+            if (window.scrollY >= 2700 && window.scrollY <= 3600) el.classList.add('shown');
+            else el.classList.remove('shown');
+        });
+
+        window.addEventListener('scroll', function() {
+            var el = document.querySelector('.content .text.txt5');
+
+            if (window.scrollY >= 3300) el.classList.add('shown');
+            else el.classList.remove('shown');
+        });
+
+    </script>
+
+    <!--모달창 자바스크립트 부분입니다. -->
+
+    <script>
+        // Get the modal
+
+
+        var modalLogin = document.getElementById('modal_login');
+        var modalRegi = document.getElementById('modal_register');
+        // Get the button that opens the modal
+        var loginBtn = document.getElementById("loginBtn");
+        var RegiBtn = document.getElementById("regiBtn");
+        // Get the <span> element that closes the modal
+        var closeLogin = document.getElementsByClassName("close_btn_login")[0];
+        var closeRegi = document.getElementsByClassName("close_btn_regi")[0];
+
+        // When the user clicks on the button, open the modal 
+        loginBtn.onclick = function() {
+            modalLogin.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalLogin) {
+                modalLogin.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, open the modal 
+        regiBtn.onclick = function() {
+            modalRegi.style.display = "block";
+            modalLogin.style.display = "none";
+        }
+
+        closeLogin.onclick = function() {
+
+            modalLogin.style.display = "none";
+        }
+        closeRegi.onclick = function() {
+            modalRegi.style.display = "none";
+
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalRegi) {
+                modalRegi.style.display = "none";
+                modalLogin.style.display = "none";
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <link rel="stylesheet" href="css/design_main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <!--    <link rel="import" href="headerfooter/headerfooter.html">-->
+</head>
+
+<body>
+    <div id="wrap">
+
+
+        <div class="header">
+            <div class="nav">
+                <div class="top_nav">
+                    <div class="logo"></div>
+                    <div class="search">
+                        <p>현대카드 라이브러리의 도서/음반을 검색해 보세요.</p>
+                    </div>
+                    <div class="cate">
+                        <a class="myBtn" id="loginBtn" href="#">로그인</a>
+                    </div>
+                </div>
+                <div class="bottom_nav">
+                    <ul>
+                        <li><a href="./index.html">HOME</a>
+
+                        </li>
+                        <li><a href="#">DESIGN LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="./design_main.html">DESIGN LIBRARY</a></li>
+                                <li><a href="./design_about.html">ABOUT</a></li>
+                                <li><a href="./design_books.html">BOOKS</a></li>
+                                <li><a href="./design_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./design_program.html">PROGRAM</a></li>
+                                <li><a href="./design_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TRAVEL LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">TRAVEL LIBRARY</a></li>
+                                <li><a href="./travel_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./travel_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./travel_program.html">PROGRAM</a></li>
+                                <li><a href="travel_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MUSIC LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">MUSIC LIBRARY</a></li>
+                                <li><a href="./music_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./music_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./music_program.html">PROGRAM</a></li>
+                                <li><a href="./music_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">COOKING LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">COOKING LIBRARY</a></li>
+                                <li><a href="./cooking_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./cooking_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./cooking_program.html">PROGRAM</a></li>
+                                <li><a href="./cooking_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal_login">
+            <div class="modal_box login">
+                <div class="modal_content">
+                    <span class="close_btn_login">
+                      <span class="x_line1"></span>
+                    <span class="x_line2"></span>
+                    </span>
+                    <h2>Log in</h2>
+                    <form action="POST" class="logIn">
+                        <label for="userId">아이디</label>
+                        <input type="text" name="userId"><br>
+                        <label for="userPw">패스워드</label>
+                        <input type="password" name="userPw"><br>
+                        <div class="bottom_input">
+                            <input type="checkbox" name="idSave">아이디 저장
+
+                            <a href="#">아이디 찾기 / 비밀번호 찾기</a><br> </div>
+                        <input type="submit" value="로그인"><br>
+
+
+
+                    </form>
+                    <div class="modal_line"></div>
+                    <div class="resister">
+                        <p><strong>현대카드 LIBRARY에 처음오셨나요?</strong> <br>회원가입을 하셔야 서비스 이용이 가능 합니다.</p>
+                        <a href="#" class="resister_btn" id="regiBtn">회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal_register">
+            <div class="modal_box register">
+                <div class="modal_content">
+                    <span class="close_btn_regi">
+                      <span class="x_line1"></span>
+                    <span class="x_line2"></span>
+                    </span>
+                    <h2>Register</h2>
+                    <form action="POST" class="logIn">
+                        <label for="userId">아이디</label>
+                        <input type="text" name="userId"><br>
+                        <label for="userPw">패스워드</label>
+                        <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                        <label for="userPw">패스워드<br>재확인</label>
+                        <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                        <div class="modal_line"></div>
+                        <label for="userName">이름</label>
+                        <input type="text" name="userName"><br>
+                        <label for="userGender">성별</label>
+                        <input type="radio" name="userGender" value="man" checked> 남
+                        <input type="radio" name="userGender" value="woman"> 여<br>
+
+                        <label for="userMail">이메일</label>
+                        <input type="text" name="userMail"><br>
+                        <label for="userBirth">생년월일</label>
+                        <select name="userYear">
+                            <option value="default">-----</option>
+                        </select> 년
+                        <select name="userMonth">
+                            <option value="default">--</option>
+                        </select> 월
+                        <select name="userDate">
+                            <option value="default">--</option>
+                        </select> 일
+                        <br>
+                        <div class="modal_line"></div>
+                        <label for="userPhone[]">전화번호</label>010 -
+                        <input type="text" name="userPhone"> -
+                        <input type="text" name="userPhone">
+                        <br><br>
+
+                        <input type="submit" value="회원가입"><br>
+
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="nav2">
+            <div class="navOverlap">
+                <div class="contentNav">
+                    <h1 class="navTop">
+                        <p class="p1">현대카드</p>
+                        <p class="p2"> DESIGN <br> LIBRARY
+                        </p>
+                    </h1>
+                    <div class="navMiddle">
+                        <p class="navMT">
+                            몰입의 시간 + 영감의 공간
+                        </p>
+                        <p class="navMU">
+                            책을 매개로 잊혀졌던 삶의 가치를 회복하고 몰입의 시간을 통해 지적인 영감을 얻을 수 있는 공간, <br> 이것이 현대카드가 지향하는 디자인라이브러리의 모습이다.
+                        </p>
+                    </div>
+                    <div class="navUnder">
+                        <span class="box1"> 더 알아보기 ></span>
+                        <span class="box2">360 VR 둘러보기  ></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section sec1">
+            <div class="TopTxt">
+                <h1>HIGHLIGHT SPOT</h1>
+                <h2>놓치지 말아야 할 곳</h2>
+            </div>
+            <div class="center gallery sec1gall">
+                <div class="media">
+                    <ul class="gallMedia">
+                        <li></li>
+                        <!--
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+-->
+                        <div class="center menu">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                    </ul>
+
+                </div>
+                <span class="arrowLeft sec1Arr"></span>
+            </div>
+            <div class="center sec1Txt">
+                <ul>
+                    <li>
+                        <p class="sec1TxtTop">
+                            집속의 집
+                        </p>
+                        <p class="sec1TxtUnder">
+                            집 속의 집을 짓다
+                        </p>
+                    </li>
+                    <!--
+                 <li> <p class="setTxtTop">
+                  기오헌
+              </p>
+              <p class="setTxtUnder">
+                  겸양과 몰입으로 이끄는 공간
+              </p></li>
+                 <li> <p class="setTxtTop">
+                  희귀본 컬렉션
+              </p>
+              <p class="setTxtUnder">
+                 보다 가치있는 400여 권의 희귀본 컬렉션
+              </p></li>
+                 <li> <p class="setTxtTop">
+                  도두스 컬렉션
+              </p>
+              <p class="setTxtUnder">
+                 이탈리아 건축 전문잡지 &nbsp;Domus&nbsp; 전 컬렉션
+              </p></li>
+                 <li> <p class="setTxtTop">
+                  라이프 컬렉션
+              </p>
+              <p class="setTxtUnder">
+                 미국 포토저널리즘 대중문화 잡지&nbsp;LIFE&nbsp; 전 컬렉션
+              </p></li>
+-->
+                </ul>
+            </div>
+            <span class="secBox">HIGHLIGHT SPOT 모두 보기 ></span>
+        </div>
+        <div class="section sec2">
+            <div class="TopTxt">
+                <h1>SOCIAL</h1>
+                <h2>인스타그램 속 #현대카드디자인라이브러리</h2>
+            </div>
+            <div class="sec2Gallery">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <!--
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+-->
+            </div>
+        </div>
+        <div class="section sec3">
+            <div class="TopTxt">
+                <h1>전문가의 도서/음반 가이드</h1>
+                <h2>분야별 전문가들이 추천하는 도서와 음반을 소개합니다.</h2>
+            </div>
+            <div class="center gallery sec3gall">
+                <div class="media">
+                    <ul>
+                        <li>
+                            <div class="sec3Content">
+                                <p class="txt1Sec3">건축가의 손끝으로부터</p>
+                                <p class="txt2Sec3">2018년 03월</p>
+                                <p class="txt3Sec3">건축가에게 종이는 영감의 근원이자 창조의 출발</p>
+                                <p class="txt4Sec3">최욱 건축가</p>
+                            </div>
+                        </li>
+                        <!--
+                   <li>
+                        <div class="sec3Content">
+                       <p class="txt1Sec3">건축가, 도시, 집을 이해할 수 있는 책</p>
+                       <p class="txt2Sec3">2018년 02월</p>
+                       <p class="txt3Sec3">건축은 삶을 설명하는 직업이다</p>
+                       <p class="txt4Sec3">최욱 건축가</p>
+                   </div>
+                   </li>
+                   <li>
+                        <div class="sec3Content">
+                       <p class="txt1Sec3">최욱에게 꿈을 주는 건축가들</p>
+                       <p class="txt2Sec3">2018년 01월</p>
+                       <p class="txt3Sec3">건축은 직업이 아니라 인물의 꿈이 반영된 삶이다</p>
+                       <p class="txt4Sec3">최욱 건축가</p>
+                   </div>
+                   </li>
+                   <li>
+                        <div class="sec4Content">
+                       <p class="txt1Sec3">10대 때 읽은 최욱의 건축 입문서</p>
+                       <p class="txt2Sec3">2017년 12월</p>
+                       <p class="txt3Sec3">건축은 생각을 구축하는 학물</p>
+                       <p class="txt4Sec3">최욱 건축가</p>
+                   </div>
+                   </li>
+-->
+                    </ul>
+                </div>
+                <span class="arrowRight Sec3Arr"></span>
+                <span class="arrowLeft Sec3Arr"></span>
+            </div>
+            <span class="secBox">도서/음반 가이드 전체 보기</span>
+        </div>
+        <div class="section sec4">
+            <div class="TopTxt">
+                <h1>BOOKS</h1>
+                <h2>근대 디자인 정신이 태동한 바우하우스 이후의 디자인 장서</h2>
+            </div>
+            <div class="sec4Box1">
+                <ul class="sec4content">
+                    <li class="sec4contentLeft">
+                        <p class="sec4Toptxt">3개월 동안 많이 열람한 도서 </p>
+                        <div class="book">
+                            <img src="img/bg4_2_0.jpg" alt="x">
+                        </div>
+                        <p class="sec4Under">Made in North Korea</p>
+                        <!--
+                      <li>
+                      <div class="book"></div>
+                     <p class="sec4Under">BB2</p>
+                      </li>
+                      <li>
+                      <div class="book"></div>
+                      <p class="sec4Under">Muji</p>
+                      </li>
+                      <li>
+                      <div class="book"></div>
+                      <p class="sec4Under">()브랜드 디자인</p>
+                      </li>
+                      <li>
+                      <div class="book"></div>
+                      <p class="sec4Under">브랜드 디자인</p>
+                      </li>
+-->
+                    </li>
+                    <li class="sec4contentRight">
+                        <div class="sec4Num1">
+                            <p class="num">1 </p>
+                            <p class="m"> Made in North Korea</p>
+                            <p>Nicholas Bonner</p>
+                        </div>
+                        <!--
+                      <div class="sec4Num2"> <li> <p class="num">2</p><p class="m">         BB2</p><p class="final">곽은정</p></div> 
+                      <div class="sec4Num3"> <p class="num">3</p><p class="m">  Muji</p><p class="final">&#91;authors, Massk...&#93;</p></div> 
+                      <div class="sec4Num4">  <p class="num">4</p><p class="m">   (좋아 보이는 것들의 비밀)브랜드 디자인</p><p class="final">최영인 지음</p></div> 
+                      <div class="sec4Num5">  <p class="num">5</p><p class="m">   브랜드 디자인</p><p class="final">디자인 매거진 CA 편...</p></div> 
+-->
+                    </li>
+                </ul>
+            </div>
+            <div class="sec4Box2">
+                <ul class="center sec4top">
+                    <li>New | 신규 도서
+                        <div class="sec4Bar"></div>
+                    </li>
+
+                    <li>Essential | 추천 도서
+                        <div class="sec4Bar2"></div>
+                    </li>
+
+                </ul>
+
+
+                <ul class="center sec4mid">
+                    <li class="aboutBook">
+                        <div class="sec4M sec4content2Right"><img class="backbook" src="img/bg4_3_0.jpg" alt="x"><img class="mainbook" src="img/bg4_3_0.jpg" alt="x"></div>
+                        <div class="sec4M sec4content2Left">
+                            <p class="sec4Top2">100권의 디자인 잡지</p>
+                            <p class="sec4Mid2">디자이너라면 꼭 알아야 할 100권의 디자인 잡지를 소개한 책이다. 각 잡지별 탄생 배경과 디자인의 의미를 설명하고 당시 제작에 참여했던 에디터와 디자이너들의 코멘트를 담았다. 특히, 국내에서는 쉽게 접하기 힘든 1800~1900년대 잡지들의 표지와 내지 이미지도 볼 수 있다.</p>
+                            <p class="sec4Under2">
+                                저자/역자 스티븐 헬러 <br> 출판사 Sigongart
+                            </p>
+                        </div>
+                    </li>
+                    <!--
+              <li class="aboutIcon">
+                 <div class="sec4M  sec4content2Right"></div>
+                   <div class="sec4M sec4content2Left">
+                    <p class="sec4Top2">디자인 아이콘</p>
+                    <p class="sec4Mid2">런던 디자인 뮤지엄과 저자의 협업으로 탄생한, 디자인 세계와 모든 디자인 양상을 개괄하는 소개서. 광범위한 디자인 예시를 통해 디자인이란 무엇인가부터 제작과 생산 등에 이르기까지 실제 디자인 실무에 대한 조언도 충실히 담고 있다.
+</p>
+                    <p class="sec4Under2">
+                        저자/역자     개러스 윌리엄스 지음 <br>
+                         출판사       시그마북스
+                    </p> 
+                    </div>
+              </li>
+-->
+                </ul>
+                <ul class="sec4round">
+                    <li><span></span></li>
+                    <li><span></span></li>
+                </ul>
+                <span class="secBox">BOOKS 모두 보기 ></span>
+            </div>
+        </div>
+        <div class="section sec5">
+            <ul class="sec5top">
+                <li>Rare Collection | 희귀본 컬렉션</li>
+                <li>LIFE Collection | LIFE 컬렉션</li>
+            </ul>
+            <div class="gallerySec5">
+                <ul class="sec5Mid">
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="gallerySec5Txt">
+                <ul class="sec5Under">
+                    <li>
+                        <p class="sec5UnderTop">The Power of Movement</p>
+                        <p class="sec5UnderUnder">멈추지 않는 에너지 <br>2018.03</p>
+                    </li>
+                    <li>
+                        <p class="sec5Under2Top">The Hottest Winter</p>
+                        <p class="sec5Under2Under">뜨거웠던 2018 평창 동계올림픽 <br>2018.03</p>
+                    </li>
+                </ul>
+            </div>
+            <span class="secBox">COLLECTION 모두 보기 ></span>
+        </div>
+        <div class="section sec6">
+            <div class="TopTxt">
+                <h1>PROGRAM</h1>
+                <h2>영감을 나누는 전시와 토크</h2>
+            </div>
+            <div class="gallerySec6">
+                <ul>
+                    <li>
+                        <p class="txt1Sec6">The Icon of Finnish Design : Eero Aarnio</p>
+                        <p class="txt2Sec6">간결함으로 완성되는 일상의 디자인</p>
+                        <p class="txt3Sec6">
+                            [ 2018.01.30 - 2018.05.13 ]
+                        </p>
+                    </li>
+                    <li>
+                        <p class="txt1Sec6">도시는 어떻게 영감의 원천으로 작용하나</p>
+                        <p class="txt2Sec6">도시재생 전문가, 김정후 박사가 전하는 도시의 미래</p>
+                        <p class="txt3Sec6">
+                            [ 2018.03.27 ]
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <span class="secBox">PROGRAM 모두 보기 ></span>
+        </div>
+        <div class="section sec7">
+            <div class="TopTxt">
+                <h1>VIDEO CLIPS</h1>
+                <h2>영상으로 만나는 디자인 라이브러리</h2>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <p class="sec7Txt1">| LIBRARY TALK 01. Inspiration Week : Design Library</p>
+                        <p class="sec7Txt2">영감을 공유한느 라이브러리에서의 1주일 : 건축가 최욱</p>
+                    </li>
+                    <li>
+                        <p class="sec7Txt1">| Inspiration TALK 08. 허영만</p>
+                        <p class="sec7Txt2">새로운 가지들이 돋아 제대로 된 나무 모양을 만들 듯</p>
+                    </li>
+                    <li>
+                        <p class="sec7Txt1">| LIBRARY CARTOON 20. 의자</p>
+                        <p class="sec7Txt2">의자 디자인과 그 의미를 만나다.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <span class="arrowRight sec8Arr"></span>
+                <span class="arrowLeft sec8Arr"></span>
+            </div>
+            <span class="secBox">VIDEO CLIPS 모두 보기 ></span>
+        </div>
+        <div class="section sec8">
+            <div class="TopTxt">
+                <h1>VISIT</h1>
+                <h2>이용 안내</h2>
+            </div>
+            <div class="map">
+                <div class="location"></div>
+                <p>서울시 종로구 북촌로 31-18 <br> T 02-3700-2700 <br> E designlibrary@hcs.com</p>
+            </div>
+            <div class="txtSec8Top">
+                <p>오늘의 운영 시간</p>
+                <p>PM 12:00 ~ PM 09:00</p>
+                <p>Membership <br><br> 회원 본인 및 동반 2인 무료 입장 만 19세 이상, 월 8회 한정
+                    <br><br> 현대카드 회원 전용(무기명 법인카드 및 Gift카드 제외) 연령 및 본인 확인을 위해 본인 및 동반인 신분증 지참 회원 본인 동반 없이 비회원 입장 불가 본인 입장 횟수 및 동반 2인 초과 시 Library 입장 불가 쾌적한 열람을 위해 동시 열람인원 50명 제한(대기 입장 가능) NOTICE2018.02.14 [ Design Library ] 현대카드 LIBRARY 설연휴 휴관 안내 Recent View (0) sns 공유하기 Next 상단으로
+                </p>
+            </div>
+            <span class="secBox">VISIT 전체보기 ></span>
+        </div>
+
+        <div class="footer">
+            <div class="ftop">
+                <ul>
+                    <li>NOTICE　　　</li>
+                    <li><a href="#">ㅣ　　2018.02.14  [ Library Home ]  현대카드 LIBRARY 설연휴 휴관 안내　　></a></li>
+                    <li class="line"></li>
+                </ul>
+            </div>
+            <div class="btop">
+                <ul>
+                    <li class="img"><img src="img/foot_logo.png" alt=""></li>
+                    <li class="txt1">서울특별시 영등포구 의사당대로3 현대캐피탈빌딩 | 대표이사 정태영</li>
+                    <li class="txt2">사업자등록번호 213-86-15419 ⓒ HYUNDAI CARD Corp</li>
+                    <li class="box">
+                        <a href="">패밀리</a>
+                        <span class="icon"></span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

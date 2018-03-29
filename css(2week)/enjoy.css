@@ -1,0 +1,721 @@
+@charset "UTF-8";
+
+/*네비게이션*/
+
+/*
+.navBar{
+
+  width: 100%;
+  height: 140px;
+  background: black;
+  z-index: 999;
+  position: fixed;
+    overflow: hidden;
+
+}
+
+.smLogo{
+
+  margin: 0 auto;
+  position: relative;
+  opacity: 0;
+
+}
+
+.searchNav{
+
+  width: 850px;
+  height: 120px;
+  position: absolute;
+  padding-top: 25px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  text-align: center;
+  padding-left:32%;
+
+}
+
+.searchImg{
+
+  position: absolute;
+  top:27.5px;
+  left: 180px;
+
+}
+
+.searchText{
+
+  position: relative;
+  width: 580px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.searchTextBox{
+
+  display: block;
+  float: left;
+
+}
+
+.searchBtn{
+
+position: relative;
+display: block;
+float: left;
+
+}
+
+.searchTextBox>input{
+
+  width: 520px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-family: nf;
+  box-sizing: border-box;
+
+}
+
+.searchBtn>input{
+
+  width: 100px;
+  height: 50px;
+
+
+}
+
+.searchLogin{
+
+  display: block;
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  top:38px;
+  right: 180px;
+  color:white;
+  font-size: 18px;
+}
+
+.searchLogin:hover{
+
+border-bottom: 2px solid;
+
+}
+
+.catNav{
+
+
+  position: absolute;
+  width: 850px;
+  height: 50px;
+  padding-top: 20px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  top: 65px;
+  line-height: 50px;
+
+}
+
+
+.toHome, .toDlab, .toTlab, .toMlab, .toClab{
+
+  position: relative;
+  width: 200px;
+  height: 50px;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: nf;
+
+}
+
+
+.toHome{
+
+padding-left: 20%
+
+}
+
+
+
+*/
+#frontWrap{
+
+width: 100%;
+height: auto;
+box-sizing: border-box;
+position: relative;
+
+
+}
+
+.sliderTopDiv{
+
+  width: 100%;
+  height: 700px;
+  background: black;
+
+
+}
+
+.slideCon{
+  
+  
+  width: 1200px;
+    margin: 0 auto;
+  height: auto;
+  display: block;
+  float: left;
+  color: white;
+}
+
+.slideText{
+  font-family: nf;
+text-align: left;
+}
+
+.slideText>span{
+  font-family: bd;
+}
+
+.slideSubject{
+text-align: left;
+  font-family:  bd;
+  font-size: 60px;
+
+}
+
+/* sliderTop wrapper*/
+  .css-sliderTop-wrapper {
+      height: 700px;
+      display: block;
+      background: #FFF;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+  }
+  /* sliderTop */
+  .sliderTop {
+      width: 100%;
+      height: 700px;
+      background: red;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 1;
+      z-index: 0;
+
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      flex-wrap: wrap;
+      -webkit-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+
+      -webkit-transition: -webkit-transform 1600ms;
+      transition: -webkit-transform 1600ms, transform 1600ms;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      }
+
+  .slide1 {
+
+      background:url("../img/cookbook.jpg") no-repeat;
+      background-color: rgba(0,0,0,.4);
+      background-blend-mode: darken;
+      left: 0;
+      background-size: cover;
+  }
+  .slide2 {
+
+    background:url("../img/food.jpg") no-repeat;
+    background-color: rgba(0,0,0,.4);
+    background-blend-mode: darken;
+    left: 100%;
+    background-size: cover;
+  }
+  .slide3 {
+    background-size: 100%;
+    background:url("../img/one.jpg");
+    background-color: rgba(0,0,0,.4);
+    background-blend-mode: darken;
+    left: 200%;
+    background-size: cover;
+  }
+  .slide4 {
+    background-size: 100%;
+    background:url("../img/walter.jpg");
+    background-color: rgba(0,0,0,.4);
+    background-blend-mode: darken;
+    left: 300%;
+    background-size: cover;
+  }
+  .sliderTop > div, .sliderTop > label{
+    text-align: center;
+  }
+  /* sliderTop inner content */
+  .sliderTop h2 {
+      color: #FFF;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 45px;
+      line-height: 120%;
+      opacity: 0;
+      -webkit-transform: translateX(500px);
+      transform: translateX(500px);
+  }
+  .sliderTop .button {
+      color: #FFF;
+      padding: 5px 50px;
+      background: rgba(255,255,255,0.3);
+      text-decoration: none;
+      opacity: 0;
+      font-size: 15px;
+      line-height: 30px;
+      display: inline-block;
+      -webkit-transform: translateX(-500px);
+      transform: translateX(-500px);
+  }
+  .sliderTop h2, .sliderTop .button {
+      -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+      transition: transform 800ms, opacity 800ms;
+      -webkit-transition-delay: 1s; /* Safari */
+      transition-delay: 1s;
+  }
+  /* Next and previous button */
+  .control {
+      position: absolute;
+      top: 50%;
+      width: 50px;
+      height: 50px;
+      margin-top: -25px;
+      z-index: 55;
+  }
+  .control label {
+
+      z-index: 0;
+      display: none;
+      text-align: center;
+      line-height: 50px;
+      font-size: 50px;
+      color: #FFF;
+      cursor: pointer;
+      opacity: 0.8;
+  }
+  .control label:hover {
+
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     opacity: 0.5;
+     border-radius: 25px;
+     background: rgba(0,0,0,0.8);
+     vertical-align:
+  }
+  .next {
+    right: 1%;
+  }
+  .previous {
+    left: 1%;
+  }
+
+
+
+  /* sliderTop pagination */
+  .sliderTop-pagination {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      z-index: 50;
+  }
+  .sliderTop-pagination label {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      margin: 0 2px;
+      border: solid 1px rgba(255,255,255,0.4);
+      cursor: pointer;
+      }
+
+  /* sliderTop control active css */
+  .slide-radio1:checked ~ .next .numb2,
+  .slide-radio2:checked ~ .next .numb3,
+  .slide-radio3:checked ~ .next .numb4,
+  .slide-radio2:checked ~ .previous .numb1,
+  .slide-radio3:checked ~ .previous .numb2,
+  .slide-radio4:checked ~ .previous .numb3 {
+      display: block;
+      z-index: 1
+  }
+  /* sliderTop pagination active css */
+  .slide-radio1:checked ~ .sliderTop-pagination .page1,
+  .slide-radio2:checked ~ .sliderTop-pagination .page2,
+  .slide-radio3:checked ~ .sliderTop-pagination .page3,
+  .slide-radio4:checked ~ .sliderTop-pagination .page4 {
+      background: rgba(255,255,255,1)
+  }
+
+  /* css for sliding  effect when you click on control button*/
+  .slide-radio1:checked ~ .sliderTop {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+  }
+  .slide-radio2:checked ~ .sliderTop {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
+  .slide-radio3:checked ~ .sliderTop {
+      -webkit-transform: translateX(-200%);
+      transform: translateX(-200%);
+  }
+  .slide-radio4:checked ~ .sliderTop {
+      -webkit-transform: translateX(-300%);
+      transform: translateX(-300%);
+  }
+
+  .slide-radio1:checked ~ .slide1 h2,
+  .slide-radio2:checked ~ .slide2 h2,
+  .slide-radio3:checked ~ .slide3 h2,
+  .slide-radio4:checked ~ .slide4 h2,
+  .slide-radio1:checked ~ .slide1 .button,
+  .slide-radio2:checked ~ .slide2 .button,
+  .slide-radio3:checked ~ .slide3 .button,
+  .slide-radio4:checked ~ .slide4 .button {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+
+
+
+
+
+#enjoyWrap {
+
+width: 100%;
+height: auto;
+box-sizing: border-box;
+position: relative;
+overflow: hidden;
+
+}
+
+
+.enjoyTitle{
+
+width: 100%;
+height: 545px;
+background: rgb(245, 245, 245);
+
+}
+
+.titleText{
+
+padding-top: 150px;
+text-align: center;
+
+}
+
+.titleText>h3{
+  line-height: 60px;
+  font-size: 60px;
+  font-style: none;
+}
+
+.enjoyTab{
+  position: absolute;
+  width: 800px;
+  min-width: 800px;
+  height: 150px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 50px;
+  background: white;
+  box-shadow: -1px 1px 2px 2px rgba(0,0,0,.5);
+  position: relative;
+  display: block;
+  margin: -150px auto 0;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+
+
+.enjoyTab>ul>li>a{
+
+position: relative;
+display: block;
+width: 150px;
+height: 150px;
+margin-right: 50px;
+background: blue;
+float: left;
+box-sizing: border-box;
+text-align: left;
+
+}
+
+
+
+
+
+
+.enjoyTab>ul>li>a:hover{
+cursor: pointer;
+transition: 0.75s ease;
+transform: scale(1.1);
+
+}
+
+.enjoyTab>ul>li>a.dLab{
+  background: url("../img/hd_dl_on.png");
+  background-size: cover;
+}
+.enjoyTab>ul>li>a.tLab{
+  background: url("../img/hd_tl_on.png");
+  background-size: cover;
+}
+.enjoyTab>ul>li>a.mLab{
+  background: url("../img/hd_ml_on.png");
+  background-size: cover;
+}
+.enjoyTab>ul>li>a.cLab{
+  background: url("../img/hd_cl_on.png");
+  background-size: cover;
+}
+
+
+a.dLab, a.tLab, a.mLab, a.cLab{
+
+font-family: bd;
+font-size: 25px;
+color: white;
+padding: 8px;
+background-color: rgba(0,0,0, 0.4);
+
+
+}
+
+
+.enjoyInfo{
+
+margin: -80px auto;
+width: 100%;
+height: 930px;
+background: url("../img/hdjoy_dl_bg.jpg") no-repeat;
+background-color: rgba(0,0,0,.4);
+background-blend-mode: darken;
+background-size: cover;
+background-position: 50 0;
+overflow: hidden;
+clear: both;
+
+
+}
+
+
+
+.infoDiv{
+  width: 1200px;
+    margin: 0 auto;
+    
+  height:  auto;
+  position: relative;
+  top:200px;
+
+
+
+}
+
+.subject{
+
+  font-family: bd;
+  font-size: 2em;
+  padding-top: 20px;
+  color: white;
+
+}
+
+.subText{
+
+  font-family: nf;
+  font-size: 16px;
+  padding-top: 15px;
+  color: white;
+
+}
+
+.subBtn{
+  margin-top: 30px;
+  width: 260px;
+  height: 60px;
+  background: rgba(0,0,0,1);
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  transition: all .5s ease-in-out;
+}
+
+.subBtn:hover{
+
+  background: #777777;
+
+}
+
+.subBtn>a{
+  font-family: nf;
+  font-size: 0.8em;
+  line-height: 60px;
+  text-align: center;
+  color: white;
+
+}
+
+.secondBtn{
+
+  margin-left: 20px;
+
+}
+
+@media only screen and (max-width: 1300px){
+
+  .searchNav, .catNav{
+
+  display: none;
+
+  }
+
+  .smLogo{
+
+    margin: 0 auto;
+    position: relative;
+    opacity: 1;
+
+  }
+
+}
+
+
+@media only screen and (max-width: 870px) {
+  .sliderTop h2 {
+      font-size: 40px;
+  }
+  .sliderTop > div {
+      padding: 0 2%
+  }
+  .control div {
+      font-size: 35px;
+  }
+  .sliderTop .button {
+      padding: 0 30px;
+  }
+
+
+  #enjoyWrap {
+
+  text-align: center;
+
+  }
+  .enjoyTab{
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+
+  }
+
+
+
+
+  .enjoyTab>ul>li>a{
+
+
+ position: relative;
+  width: 90%;
+  height: 80%;
+
+
+  }
+
+
+.infoDiv{
+width: 100%;
+left: 15px;
+margin: 0;
+
+
+}
+
+
+.titleText{
+  width: 90%;
+  margin: 0 auto;
+}
+
+  .titleText h3{
+
+font-size: 2.5em;
+
+  }
+
+  .titleText p{
+
+font-size: 1em;
+
+
+
+
+
+  }
+
+  .subBtn{
+
+  width: 60%;
+
+  }
+  .secondBtn{
+
+    margin-left:0px;
+
+  }
+
+.enjoyTab{
+
+  width: 100%;
+  height: auto;
+  overflow:hidden;
+}
+
+
+.enjoyTab>ul>li>a:hover{
+
+  width: 100%;
+cursor: pointer;
+transition: 0.75s ease;
+transform: scale(1);
+
+}
+
+
+  }

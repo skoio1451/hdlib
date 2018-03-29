@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cooking_LIBRARY_about</title>
+    <link rel="stylesheet" href="css(2week)/reset.css">
+    <link rel="stylesheet" href="css(2week)/CK_about.css">
+    <link rel="stylesheet" href="css(2week)/modal.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+       
+        <div class="header">
+            <div class="nav">
+                <div class="top_nav">
+                    <div class="logo"></div>
+                    <div class="search">
+                        <p>현대카드 라이브러리의 도서/음반을 검색해 보세요.</p>
+                    </div>
+                    <div class="cate">
+                        <a class="myBtn" id="loginBtn" href="#">로그인</a>
+                    </div>
+                </div>
+                <div class="bottom_nav">
+                    <ul>
+                        <li><a href="./index.html">HOME</a>
+
+                        </li>
+                        <li><a href="#">DESIGN LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="./design_main.html">DESIGN LIBRARY</a></li>
+                                <li><a href="./design_about.html">ABOUT</a></li>
+                                <li><a href="./design_books.html">BOOKS</a></li>
+                                <li><a href="./design_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./design_program.html">PROGRAM</a></li>
+                                <li><a href="./design_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TRAVEL LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">TRAVEL LIBRARY</a></li>
+                                <li><a href="./travel_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./travel_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./travel_program.html">PROGRAM</a></li>
+                                <li><a href="travel_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MUSIC LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">MUSIC LIBRARY</a></li>
+                                <li><a href="./music_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./music_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./music_program.html">PROGRAM</a></li>
+                                <li><a href="./music_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">COOKING LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">COOKING LIBRARY</a></li>
+                                <li><a href="./cooking_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./cooking_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./cooking_program.html">PROGRAM</a></li>
+                                <li><a href="./cooking_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="modal" id="modal_login">
+            <div class="modal_box login">
+                <div class="modal_content">
+                    <span class="close_btn_login">
+                      <span class="x_line1"></span>
+                    <span class="x_line2"></span>
+                    </span>
+                    <h2>Log in</h2>
+                    <form action="POST" class="logIn">
+                        <label for="userId">아이디</label>
+                        <input type="text" name="userId"><br>
+                        <label for="userPw">패스워드</label>
+                        <input type="password" name="userPw"><br>
+                        <div class="bottom_input">
+                            <input type="checkbox" name="idSave">아이디 저장
+
+                            <a href="#">아이디 찾기 / 비밀번호 찾기</a><br> </div>
+                        <input type="submit" value="로그인"><br>
+
+
+
+                    </form>
+                    <div class="modal_line"></div>
+                    <div class="resister">
+                        <p><strong>현대카드 LIBRARY에 처음오셨나요?</strong> <br>회원가입을 하셔야 서비스 이용이 가능 합니다.</p>
+                        <a href="#" class="resister_btn" id="regiBtn">회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal_register">
+            <div class="modal_box register">
+                <div class="modal_content">
+                    <span class="close_btn_regi">
+                      <span class="x_line1"></span>
+                    <span class="x_line2"></span>
+                    </span>
+                    <h2>Register</h2>
+                    <form action="POST" class="logIn">
+                        <label for="userId">아이디</label>
+                        <input type="text" name="userId"><br>
+                        <label for="userPw">패스워드</label>
+                        <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                        <label for="userPw">패스워드<br>재확인</label>
+                        <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                        <div class="modal_line"></div>
+                        <label for="userName">이름</label>
+                        <input type="text" name="userName"><br>
+                        <label for="userGender">성별</label>
+                        <input type="radio" name="userGender" value="man" checked> 남
+                        <input type="radio" name="userGender" value="woman"> 여<br>
+
+                        <label for="userMail">이메일</label>
+                        <input type="text" name="userMail"><br>
+                        <label for="userBirth">생년월일</label>
+                        <select name="userYear">
+                            <option value="default">-----</option>
+                        </select> 년
+                        <select name="userMonth">
+                            <option value="default">--</option>
+                        </select> 월
+                        <select name="userDate">
+                            <option value="default">--</option>
+                        </select> 일
+                        <br>
+                        <div class="modal_line"></div>
+                        <label for="userPhone[]">전화번호</label>010 -
+                        <input type="text" name="userPhone"> -
+                        <input type="text" name="userPhone">
+                        <br><br>
+
+                        <input type="submit" value="회원가입"><br>
+
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section CKabout">
+            <div class="CKaboutWrap1">
+                <h1>ABOUT</h1>
+                <ul>
+                    <li class="CKtxt">
+                        <p class="txtMain">채움의 시간 + 영감의 공간</p>
+                        <p class="txtSub">현대카드 라이브러리는 디자인, 트래블, 뮤직으로 이어지는<br> 지적 여정을 쿠킹으로 마무리한다. 시각과 청각을 넘어 오감의<br> 영역까지 탐색을 하는 동안, 회원이 능동적으로 참여할 수 있는<br> 여지도 꾸준히 넓어져 왔다. 마지막 라이브러리로 쿠킹을 선택한<br> 것은 삶의 본질에 가깝게 닿아 있는 주제이기 때문이다.<br> 가장 보편적인 경험이지만 바로 그렇기 때문에 영감의 의미<br> 있는 출발점이 되기도 한다.<br> 읽고 만들고 맛보면서 쿠킹에 온전히 집중하는 시간은 지친<br> 일상에 새로운 기운을 더해주는 맛있는 자극이다.</p>
+                    </li>
+                    <li class="CKwrap1"></li>
+                    <li class="CKtxt">
+                        <p class="txtMain">쿠킹,일상의 허기를 채우는 영감의 성찬</p>
+                        <p class="txtSub short">먹거리에 대한 말들이 넘쳐나는 요즘이지만 미식을 깊게 다루는 이야기는 여전히<br> 부족하다. 그래서 현대카드는 맛을 경험하는 다양한 방법을 제안 하면서 새롭고<br> 흥미로운 대화에 불을 지피고자 쿠킹 라이브러리를 선보인다.<br><br> ‘라이브러리’라는 단어에서 짐작할 수 있듯 일차적으로는 요리와 관련된 방대한<br> 자료를 소개하는 곳이지만 그게 전부는 아니다. 현대카드 쿠킹 라이브러리는 새로운<br> 레시피를 탐색할 수 있는 도서관이자 미식의 즐거움을 한껏 누리게 해주는 레스토랑<br> 이며, 직접요리 과정까지 체험하도록 돕는 친절한 주방이다. 종이책에만 납작하게<br> 갇히지 않는 입체적이고 공감각적인 경험을 제공하는 공간인 셈이다.<br> 머무는 동안 입과 눈은 즐거워지고, 신선한 지식과 건강한 영감으로 머리와<br> 가슴까지 든든하게 채울 수가 있을 것이다.</p>
+                    </li>
+                    <li class="CKwrap2"></li>
+                    <li class="CKtxt">
+                        <p class="txtMain">혀 끝으로 상상하고, 눈으로 맛보는<br> 미식과 지식의 보고</p>
+                        <p class="txtSub">10,000여권에 이르는 쿠킹 라이브러리의 쿠킹책 컬렉션은<br> 검증을 거친 창의적인 레시피의 보고이자 사진, 역사, 문화,<br> 예술 등 폭 넓은 시각으로 쿠킹을 해석한 최초의 시도다.<br> 블로그와 SNS를 통해 레시피가 흔하게 공유되는 시대에,<br> 소장할 만한 가치를 지니는 쿠킹책은 과연 어떠한 것일까 라는<br> 질문을 쿠킹 라이브러리는 던진다.<br><br>좋은 쿠킹책은 단순한 레시피 소개에 그치지 않고 재료와 음식,<br> 그리고 그 음식을 만든 이들에 대한 흥미로운 이야기까지<br> 들려주곤 한다. 우리는 비프 웰링턴을 만들면서 워털루 전투<br> 전후의 유럽을 가늠하고, 고흐가 묘사한 서민들의 끼니를 통해<br> 당대의 고단한 일상을 그려본다. 쿠킹책으로 가득 찬 서가에는<br> 새로운 레시피를 발견하는 기쁨외에도, 수 백 년 전의 역사와<br> 대륙 너머의 풍경을 탐험하는 놀라운 경험이 숨겨져 있다.</p>
+                    </li>
+                    <li class="CKwrap3"></li>
+                    <li class="CKtxt">
+                        <p class="txtMain">눈을 감으면 감각이 깨어나는 부엌</p>
+                        <p class="txtSub">
+
+                            다소 좁다 싶은 입구 너머에는 후련한 반전이 자리 잡고 있다.<br> 층과 층 사이 일부를 터서 높은 층고를 확보한 덕분에 내부가<br> 여유롭고, 각각의 공간 또한 자연스럽게 이어진다. 위층에서<br> 쏟아지는 빛은 아래층까지 골고루 닿고, 맛있는 냄새와<br> 지글거리는 소리가 쿠킹책으로 가득한 서가에도 기분 좋게<br> 침범한다. 다른 도서관과 달리 다양한 감각을 활발하게<br> 자극하는 공간이다. 눈을 감고 있어도 쿠킹 라이브러리에서는<br> 입체적인 풍경을 볼 수 있다.</p>
+                    </li>
+                    <li class="CKwrap4"></li>
+                    <li class="CKtxt">
+                        <p class="txtMain">
+                            오감을 자극해<br> 영감을 채우는 공간으로 확장되다</p>
+                        <div class="txtSub">
+                            DELI가 있는 1층에서 2, 3층의 Library로, 다시<br> Cooking Class가 열리는 3, 4층의 주방과 테라스까지, 책을 읽고<br> 요리를 하고 음식을 즐기는 모든 과정이 쿠킹 라이브러리에서는<br> 조화로운 코스 요리처럼 유기적으로 이어진다.<br><br>
+                            <div class="bold">1F Deli</div><br> 캐주얼 다이닝 델리는 맛있는 냄새와 소리로 쿠킹<br> 라이브러리라는 공간의 정체성을 귀뜸하며, 이어질 2, 3,<br> 4층에 대한 기대를 높여주는 공간이다.<br><br>
+                            <div class="bold">2, 3F Library</div><br> 10,000여권의 쿠킹책을 갖추고 있어서 서가 사이를 거닐며<br> 다양한 맛을 그려볼 수 있다. 레시피만 제공하는 데 그치지 않고 <br> 쿠킹에 대한 개념까지 넓혀주는 장서들인 만큼 흥미진진한<br> 지적 탐험을 기대할 만 하다.</div>
+                    </li>
+                    <li class="CKwrap5"></li>
+                    <li class="CKtxt">
+
+                        <div class="txtSub">
+                            <div class="bold">2F Ingredients House</div><br> 적은 양으로도 음식의 맛을 크게 좌우하는 향신료는 한때<br> 화폐 이상의 가치로 거래되며 세계 역사의 흐름까지 바꿔놓았다.<br> 190여 종의 향신료를 직접 만지고 냄새를 맡고, 때로는 맛볼 수도<br> 있는 이 공간은 공감각적으로 흥미로운 경험을 선사한다.<br>
+                            <br>
+                            <div class="bold">3F Self-Cooking</div><br> 라이브러리의 책을 읽다가 직접 레시피를 시도해보고 싶어질<br> 경우에는 셀프 쿠킹을 이용하면 된다. 친구, 가족, 연인과 함께<br> 음식을 만들고 나누어 먹는 따뜻한 경험을 통해 쿠킹의 순수한<br> 즐거움을 재발견할 수 있다.</div>
+                    </li>
+                    <li class="CKwrap6"></li>
+                    <li class="CKtxt">
+
+                        <div class="txtSub">
+                            <div class="bold">3, 4F Cooking Class</div><br> 홈 쿠킹에 필요한 모든 것이 완비된 주방에서 셰프, 푸드<br> 스타일리스트, 파티시에 등의 전문가가 다양한 지식과 영감을<br> 공유하는 쿠킹 클래스를 연다.<br> 현대카드 회원 누구나 신청을 통해 참여가 가능하다.<br><br>
+                            <div class="bold">4F Greenhouse</div><br> 계절의 변화가 가깝게 느껴지는 허브 가든과 프라이빗<br> 다이닝이 제공되는 유리 온실이 자리 잡고 있다.<br> 교외에서 보내는 한 때처럼 여유롭고 특별한 경험을<br> 도심 한복판에서 즐길 수 있다.</div>
+                    </li>
+                    <li class="CKwrap7"></li>
+                    <li class="CKtxt">
+                        <p class="txtMain">에이징 Aging, 시간의 흔적을 기록하다</p>
+                        <p class="txtSub">
+                            쿠킹 라이브러리를 완성하는 마지막 디테일은 시간이다.<br> 첨단의 소재보다는 원목, 금속, 콘크리트, 폴리 카보네이트 등<br> 세월을 정직하게 받아들이며 변화해갈 재료들이 구석구석을<br> 채우고 있다. 많은 이들이 활발하게 드나들고 사용하는 동안<br> 그 흔적과 기억이 공간에 자연스럽게 새겨질 것이다.<br> 누군가의 손을 거칠수록 더 완전해지는 쿠킹 라이브러리의<br> 특징은 사람의 온기로 완성되는 쿠킹의 본질과도 닿아 있다.</p>
+                    </li>
+                    <li class="CKwrap8"></li>
+                    <li class="CKtxt">
+                        <p class="txtMain">드러내지 않음으로써 드러나는 겸허의 공간</p>
+                        <p class="txtSub">
+                            강남의 여느 거리들과는 달리, 도산공원 북쪽 골목길은 아직도<br> 고즈넉한 정서를 지키고 있다. 쿠킹 라이브러리가 자리를 잡은<br> 곳은 분주한 도시 안의 고요한 틈새다. 콘크리트와<br> 폴리 카보네이트로 완성한 담담한 외관은 평범함에서<br> 비범함을 찾고, 형태를 더하기 보다는 덜어내려고 한 건축가의<br> 의도를 말해준다. 담백해서 쉽게 물리지 않는 음식처럼,<br> 기존의 풍경에 자연스럽게 스며든 쿠킹 라이브러리도 사람들의<br> 발길을 편안하게 이끄는 랜드마크로 자리매김하게 될 것이다.</p>
+                    </li>
+                    <li class="CKwrap9"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section CKprinciple">
+            <div class="CKaboutWrap2">
+
+                <h1 class="CKprinciple sub">PRINCIPLES</h1>
+                <div class="CKprinciple sub1"> 레시피 이상의 지적 경험을 선사하는 쿠킹 책의 기준</div>
+                <div class="CKprinciple sub2">이전에는 알지 못했던 새로운 재료와 독창적인 요리법을 소개하는 책, 전문 셰프에서 요리 초보자까지 누구에게나 유용한 책, 쿠킹에 대한 새로운 관점을 갖게 하는 책,<br> 당장이라도 양 소매를 걷어 부치고 주방에 서고 싶게 만들 만큼 흥미로운 쿠킹책을 엄선하기 위해 쿠킹 라이브러리는 다음의 5가지 원칙을 확립했다.</div>
+            </div>
+            <div class="CKprincipleimg">
+                <div class="CKaboutWrap2">
+                    <ul>
+                        <li>
+                            <div class="CKPtxt"><a href="#">1 Inspring</a></div>
+                        </li>
+                        <li>
+                            <div class="CKPtxt"><a href="#">2 Practical</a></div>
+                        </li>
+                        <li>
+                            <div class="CKPtxt"><a href="#">3 Reliable</a></div>
+                        </li>
+                        <li>
+                            <div class="CKPtxt"><a href="#">4 Flavorful</a></div>
+                        </li>
+                        <li>
+                            <div class="CKPtxt"><a href="#">5 Timeless Yet timely</a></div>
+                        </li>
+                    </ul>
+                    <div class="CKaboutWrap2-1">
+                        <ul class="CKPtxt_sub">
+                            <li>
+                                <div class="a">Good books stumulate<br> and provoke,<br> not just educate.</div>
+                            </li>
+                            <li>
+                                <div class="b">|</div>
+                            </li>
+                            <li>
+                                <div class="c">좋은 쿠킹책은 영감을 깨우고 호기심을 자극한다.<br> 단순히 레시피를 알려주는 것이 아니라, 요리를 통해 새로운 문화와 감각을 발견하게 하는 책.<br> 독자로 하여금 당장이라도 주방에 서고 싶은 도전 정신을 불러 일으키는 책이 좋은 쿠킹서적이다.</div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section CKcurators">
+            <div class="CKaboutWrap3">
+                <p>CURATORS</p>
+                <div class="CKC_sub">도서 선정에 전문성과 객관성을 부여하는 글로벌 북 큐레이터<br><br> 쿠킹 라이브러리는 오감을 자극해 지식과 미식의 경험을 확장하고, 일상에 영감을 채워주는 창의적 활동으로 쿠킹을 정의한다.<br> 장서 선정의 기준으로 삼은 건 단순히 레시피 이상의 지적 경험을 선사하는 쿠킹책들이다. 글로벌 북 큐레이터로 미국, 호주, 유럽 등<br> 각 대륙을 대표하는 푸드 컬럼니스트와 전문가들이 참여해 신뢰할 만한 목록을 구성했다.<br> 각기 다른 국적과 전문 분야를 지닌 북 큐레이터들은 전문가의 식견으로 레시피를 검증하는 한편,<br> 인문·사회·예술 등 다양한 분야를 편견없이 넘나들며 전 세계의 음식 문화를 폭 넓게 수용하는 균형잡힌 큐레이션을 제안했다.<br> 최종적으로 쿠킹 라이브러리의 모든 장서는 현대카드만의 엄격한 필터링을 통해 선정되었다.</div>
+                <div class="CKC_box">
+                    <div class="CKC_img">d</div>
+                    <div class="CKC_Mtxt">Celia Sack</div>
+                    <div class="CKC_Mtxt2">샌프란시스코의 쿠킹책 전문 서점 Omnivore Books on Food 오너<br> Williams Sonoma 빈티지 도서 컬렉션, 미국 뉴욕대 도서관 큐레이터<br>American 담당</div>
+
+                    <ul>
+                        <li class="CKC_btn1">North American</li>
+                        <li class="CKC_btn2">Central - South American</li>
+                    </ul>
+                </div>
+                <div class="cirWrap">
+                    <ul class="cir">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="CKC_arrow"></div>
+            </div>
+
+        </div>
+        <div class="CKfooter">
+
+        </div>
+    </div>
+
+
+
+    <script>
+        var userYear = (document.getElementsByName(userYear)[0]);
+        var userMonth = (document.getElementsByName(userMonth)[0]);
+        var userDate = (document.getElementsByName(userDate)[0]);
+
+
+
+        // Get the modal
+
+
+        var modalLogin = document.getElementById('modal_login');
+        var modalRegi = document.getElementById('modal_register');
+        // Get the button that opens the modal
+        var loginBtn = document.getElementById("loginBtn");
+        var RegiBtn = document.getElementById("regiBtn");
+        // Get the <span> element that closes the modal
+        var closeLogin = document.getElementsByClassName("close_btn_login")[0];
+        var closeRegi = document.getElementsByClassName("close_btn_regi")[0];
+
+        // When the user clicks on the button, open the modal 
+        loginBtn.onclick = function() {
+            modalLogin.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalLogin) {
+                modalLogin.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, open the modal 
+        regiBtn.onclick = function() {
+            modalRegi.style.display = "block";
+            modalLogin.style.display = "none";
+        }
+
+        closeLogin.onclick = function() {
+
+            modalLogin.style.display = "none";
+        }
+        closeRegi.onclick = function() {
+            modalRegi.style.display = "none";
+
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalRegi) {
+                modalRegi.style.display = "none";
+                modalLogin.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

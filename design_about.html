@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>design</title>
+    <link rel="stylesheet" href="css(2week)/reset.css">
+    <link rel="stylesheet" href="css(2week)/design.css">
+    <link rel="stylesheet" href="css(2week)/modal.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div class="header">
+            <div class="nav">
+                <div class="top_nav">
+                    <div class="logo"></div>
+                    <div class="search">
+                        <p>현대카드 라이브러리의 도서/음반을 검색해 보세요.</p>
+                    </div>
+                    <div class="cate">
+                        <a class="myBtn" id="loginBtn" href="#">로그인</a>
+                    </div>
+                </div>
+                <div class="bottom_nav">
+                    <ul>
+                        <li><a href="./index.html">HOME</a>
+
+                        </li>
+                        <li><a href="#">DESIGN LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="./design_main.html">DESIGN LIBRARY</a></li>
+                                <li><a href="./design_about.html">ABOUT</a></li>
+                                <li><a href="./design_books.html">BOOKS</a></li>
+                                <li><a href="./design_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./design_program.html">PROGRAM</a></li>
+                                <li><a href="./design_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TRAVEL LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">TRAVEL LIBRARY</a></li>
+                                <li><a href="./travel_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./travel_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./travel_program.html">PROGRAM</a></li>
+                                <li><a href="travel_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MUSIC LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">MUSIC LIBRARY</a></li>
+                                <li><a href="./music_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./music_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./music_program.html">PROGRAM</a></li>
+                                <li><a href="./music_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">COOKING LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">COOKING LIBRARY</a></li>
+                                <li><a href="./cooking_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="./cooking_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                                <li><a href="./cooking_program.html">PROGRAM</a></li>
+                                <li><a href="./cooking_visit.html">VISIT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal_login">
+            <div class="modal_box login">
+                <div class="modal_content">
+                    <span class="close_btn_login">
+                      <span class="x_line1"></span>
+                    <span class="x_line2"></span>
+                    </span>
+                    <h2>Log in</h2>
+                    <form action="POST" class="logIn">
+                        <label for="userId">아이디</label>
+                        <input type="text" name="userId"><br>
+                        <label for="userPw">패스워드</label>
+                        <input type="password" name="userPw"><br>
+                        <div class="bottom_input">
+                            <input type="checkbox" name="idSave">아이디 저장
+
+                            <a href="#">아이디 찾기 / 비밀번호 찾기</a><br> </div>
+                        <input type="submit" value="로그인"><br>
+
+
+
+                    </form>
+                    <div class="modal_line"></div>
+                    <div class="resister">
+                        <p><strong>현대카드 LIBRARY에 처음오셨나요?</strong> <br>회원가입을 하셔야 서비스 이용이 가능 합니다.</p>
+                        <a href="#" class="resister_btn" id="regiBtn">회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal_register">
+            <div class="modal_box register">
+                <div class="modal_content">
+                    <span class="close_btn_regi">
+                      <span class="x_line1"></span>
+                    <span class="x_line2"></span>
+                    </span>
+                    <h2>Register</h2>
+                    <form action="POST" class="logIn">
+                        <label for="userId">아이디</label>
+                        <input type="text" name="userId"><br>
+                        <label for="userPw">패스워드</label>
+                        <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                        <label for="userPw">패스워드<br>재확인</label>
+                        <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                        <div class="modal_line"></div>
+                        <label for="userName">이름</label>
+                        <input type="text" name="userName"><br>
+                        <label for="userGender">성별</label>
+                        <input type="radio" name="userGender" value="man" checked> 남
+                        <input type="radio" name="userGender" value="woman"> 여<br>
+
+                        <label for="userMail">이메일</label>
+                        <input type="text" name="userMail"><br>
+                        <label for="userBirth">생년월일</label>
+                        <select name="userYear">
+                            <option value="default">-----</option>
+                        </select> 년
+                        <select name="userMonth">
+                            <option value="default">--</option>
+                        </select> 월
+                        <select name="userDate">
+                            <option value="default">--</option>
+                        </select> 일
+                        <br>
+                        <div class="modal_line"></div>
+                        <label for="userPhone[]">전화번호</label>010 -
+                        <input type="text" name="userPhone"> -
+                        <input type="text" name="userPhone">
+                        <br><br>
+
+                        <input type="submit" value="회원가입"><br>
+
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="htext">
+                <ul>
+                    <li>ABOUT</li>
+                </ul>
+            </div>
+
+            <div class="contents">
+                <div class="text1">
+                    <ul>
+                        <li class="txt40">몰입의 시간 + 영감의 공간</li>
+                        <li class="txt20">도시의 빠른 속도에서 벗어나 일상을 사유하고, 몰입을 통해 잊혀졌던 아날로그의 감성과 영감을 회복하는 것. 이것이 바로 현대카드 라이브러리가 제안하는 새로운 라이프 스타일이다.</li>
+                        <li class="txt40">아날로그적 반전</li>
+                        <li class="txt20">누구나 감각적인 반응만 이야기할 때, ‘반응하지 말고 생각해보라’고 권하는 현대카드 라이브러리의 역발상은 ‘기존의 것을 다르게 재해석’ 하려는 노력이야말로 자신을 이세계에서 전혀 다른 존재로 만든다‘는 현대카드만의 철학으로 뒷받침된다.</li>
+
+                    </ul>
+                </div>
+
+                <div class="text2">
+                    <ul>
+                        <li class="txt40">‘현대카드스러움’으로 완성된 지적허브</li>
+                        <li class="txt20">
+                            라이브러리는 '현대카드스러움'이 집약된 공간이다. 공간의 설계는 물론 도서의 선정, 운영시스템, 서가의 작은 디테일 하나에조차 현대카드만의 직관을 담았다. 아날로그적 감성으로 몰입의 즐거움을 선사할 현대카 드 라이브러리는 그 존재 자체만으로 우리의 삶에 새 로운 영감이 되어줄 것이다.</li>
+                    </ul>
+                </div>
+
+                <div class="text3">
+                    <ul>
+                        <li class="txt40">바우하우스 이후 17,000여 권의 장서를 큐레이팅하다</li>
+                        <li class="txt20">책을 매개로 잊혀졌던 삶의 가치를 회복하고 몰입의 시간을 통해 지적인 영감을 얻을 수 있는 공간, 이것이 현대카드가 지향하는 디자인 라이브러리의 모습이다. 디자인 라이브러리는 '현대카드스러움'을 공간과 철학 은 물론 장서의 큐레이팅 과정에도 그대로 투영했다. 그리고 이 과정은 라이브러리의 컨셉에 부합하는 디자 인 사조를정하는 데에서 시작되었다. 합리적이고 기능 적인 태도를 강조한 바우하우스의 이념은 오늘날 현대 디자인의모든 영역에서 발견되고 있다. 이것이 바로 현대카드 디자인 라이브러리가 근대 디자인의 정신이 태동한 바우하우스를 그 출발점으로 삼은 이유다.</li>
+                    </ul>
+
+                </div>
+
+                <div class="text4">
+                    <ul>
+                        <li class="txt40">디자인 라이브러리, 가회동에 터를 잡다</li>
+                        <li class="txt20">바쁜 도시의 급한 발검음은 잊고 잠시 여유로운 산책 을 유도하는 적절한 불편함을 간직한 가회동이야말로 디자인 라이브러리가 필요로 하는 아날로그 감성이 담긴 최적의 장소다. 현대카드는 옛 것과 새 것의 공 존에 대한 적극적인 해설을 드러내는기존 라이브러리 건물을 리노베이션을 통해 빛과 여백을 품은 라이브 러리 공간으로 새롭게 재해석해냈다. 긴장과 이완, 라이브러리를</li>
+                        <li class="txt40">긴장과 이완, 라이브러리를 산책하다</li>
+                        <li class="txt20">현대카드 디자인 라이브러리는 산책하는 곳이다. 라이브러리로 오르는 동선은 책을 찾아가는 하나의 산책로라 할 수 있다. 좁은 통로와 계단을 오르내리며 빛과 어둠, 긴장과 이완을 경험하는 라이브러리 산책은 창조적 사유에 이르는 또 하나의 여정이 될 것이다.</li>
+                    </ul>
+
+                    <div class="text5">
+                        <ul>
+                            <li class="txt40">‘현대카드스러움’을 담아 완성하다</li>
+                            <li class="txt20">못을 사용하지 않고 결구만으로 완성한 한국 전통 서가 는 옆면과 뒷면을 판으로 마감하지 않고 열려 있는 경 우가 많다. 라이브러리 곳곳에서 마주치게 되는 서가는 이러한 전통 서가를 스테인리스 판으로 모던하게 재해 석한 또 하나의 직관을 보여준다. 무엇보다 현대카드 디 자인 라이브러리의 서가는 책이 꽂혀 있을 때를 고려하 여 서가의 수직선은 뒤로 물러나게 하여 책이 꽂힌 풍 경 그대로를 드러나게함으로써 겸양의 미덕을 드러내 고자 한다.</li>
+                        </ul>
+
+                        <div class="text6">
+
+                            <ul>
+                                <li class="txt40">
+                                    빛의 공간에 들다</li>
+                                <li class="txt20">빛으로 충만한 라이브러리는 공간에 대한 열린 태도와 생명력을 보여준다. 라이브러리의 서가는 미리 계산한 빛의 각도에 따라 한 걸음 물러나 계획되었다. 더불어 전면 유리창을 통해 투명하게 열린 라이브러리는 낮과 밤의 서로 다른 도시 풍경을 품는다.</li>
+                                <li class="txt40">집 속에 집을 짓다</li>
+                                <li class="txt20">2층에는 집의 형상으로 기존 공간을 가로지르는 ‘집 속 의 집’이, 3층에는 바라보는 풍경을 한정하며 겸양과 몰 입으로 이끄는 공간인 ‘기오헌 (寄傲軒)’이 들어섰다. 이 공간들은 단순하고 정제된 공간 속에서 서로 다른 스케일을 체험하게 하는 동시에, 하나의 공간 안에서 다양한 장면과 깊이감을 만든다.</li>
+                            </ul>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <ul>
+                        <li class="bg0"></li>
+                        <li class="bg1"></li>
+                        <li class="bg2"></li>
+                        <li class="bg3"></li>
+                        <li class="bg4"></li>
+                        <li class="bg5"></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section2">
+            <div class="topcon">
+                <ul>
+                    <li>PRINCIPLES
+                    </li>
+                    <li>도서 선정의 새로운 룰(Rule)을 만들다. 현대카드 디자인 라이브러리의 핵심은 17,000여 권에 달하는 도서의 큐레이팅에 있다고 해도 과언이 아니다. 방대한 양의 도서를 고르기에 앞서 현대카드가 올바른 선택과 집중을 위해 정립한 큐레이팅의 7가지 원칙은 다음과 같다. “영감을 줄 수 있고(Inspiring), 문제의 답을 제시하고(Useful), 다양한 범위를 포괄해야 (Wide-Ran ging) 한다. 또 해당 분야에서 영향력을 지니고 있어야 하며(Influential), 그 한 권에 충실한 컨텐츠를 담고(Thorough) 있어야 한다. 더불어 심미적(Aesthetic)이고, 시대를 초월한 (Time less) 가치를 지닌 책이어야 한다.” 이러한 7가지 도서 선정 원칙은 디자인 라이브러리의 철학을 대변하는 동시에 디지털 시대에 아날로그 책이 지녀야 할 핵심 가치가 무엇인지를 말해준다.
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="botcon">
+                <div class="tex1">
+                    <ul>
+                        <li>1 Inspring</li>
+                        <li>2 Useful</li>
+                        <li>3 Thorough</li>
+                        <li>4 Influential</li>
+                        <li>5 Wide-ranging</li>
+                        <li>6 Aesthetic</li>
+                        <li>7 Timeless</li>
+                    </ul>
+
+                </div>
+                <div class="tex2">
+                    <ul>
+                        <li>Good books<br> stimulate<br> and provoke,<br> not just educate.</li>
+                        <li>좋은 디자인책은 영감을 깨우고 자극한다. 내용과 이미지가 영감을 줄 수 있는 책을 선택할 것. 주제를 새롭게 해석한 책이나, 잘 알려지지 않은 작품을 소개하는 책, 또는 잘 알려진 디자이너를 새로운 문맥에서 재해석하는 책이 좋은 디자인책이다.</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer"></div>
+
+    </div>
+    <script>
+        // Get the modal
+        var modalLogin = document.getElementById('modal_login');
+        var modalRegi = document.getElementById('modal_register');
+        // Get the button that opens the modal
+        var loginBtn = document.getElementById("loginBtn");
+        var RegiBtn = document.getElementById("regiBtn");
+        // Get the <span> element that closes the modal
+        var closeLogin = document.getElementsByClassName("close_btn_login")[0];
+        var closeRegi = document.getElementsByClassName("close_btn_regi")[0];
+
+        // When the user clicks on the button, open the modal 
+        loginBtn.onclick = function() {
+            modalLogin.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalLogin) {
+                modalLogin.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, open the modal 
+        regiBtn.onclick = function() {
+            modalRegi.style.display = "block";
+            modalLogin.style.display = "none";
+        }
+
+        closeLogin.onclick = function() {
+
+            modalLogin.style.display = "none";
+        }
+        closeRegi.onclick = function() {
+            modalRegi.style.display = "none";
+
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalRegi) {
+                modalRegi.style.display = "none";
+                modalLogin.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

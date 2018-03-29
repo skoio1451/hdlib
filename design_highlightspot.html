@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HIGHLIGHTSPOT</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/design_highlightspot.css">
+    <link rel="stylesheet" href="css/headerfooter2.css">
+</head>
+
+<body>
+
+    <!-- header부분 -->
+
+
+    <div class="header">
+        <div class="nav">
+            <div class="top_nav">
+                <div class="logo"></div>
+                <div class="search">
+                    <p>현대카드 라이브러리의 도서/음반을 검색해 보세요.</p>
+                </div>
+                <div class="cate">
+                    <a class="myBtn" id="loginBtn" href="#">로그인</a>
+                </div>
+            </div>
+            <div class="bottom_nav">
+                <ul>
+                    <li><a href="./index.html">HOME</a>
+
+                    </li>
+                    <li><a href="#">DESIGN LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="./design_main.html">DESIGN LIBRARY</a></li>
+                            <li><a href="./design_about.html">ABOUT</a></li>
+                            <li><a href="./design_books.html">BOOKS</a></li>
+                            <li><a href="./design_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./design_program.html">PROGRAM</a></li>
+                            <li><a href="./design_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TRAVEL LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">TRAVEL LIBRARY</a></li>
+                            <li><a href="./travel_about.html">ABOUT</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="./travel_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./travel_program.html">PROGRAM</a></li>
+                            <li><a href="travel_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MUSIC LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">MUSIC LIBRARY</a></li>
+                            <li><a href="./music_about.html">ABOUT</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="./music_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./music_program.html">PROGRAM</a></li>
+                            <li><a href="./music_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">COOKING LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">COOKING LIBRARY</a></li>
+                            <li><a href="./cooking_about.html">ABOUT</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="./cooking_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./cooking_program.html">PROGRAM</a></li>
+                            <li><a href="./cooking_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_login">
+        <div class="modal_box login">
+            <div class="modal_content">
+                <span class="close_btn_login">
+                      <span class="x_line1"></span>
+                <span class="x_line2"></span>
+                </span>
+                <h2>Log in</h2>
+                <form action="POST" class="logIn">
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId"><br>
+                    <label for="userPw">패스워드</label>
+                    <input type="password" name="userPw"><br>
+                    <div class="bottom_input">
+                        <input type="checkbox" name="idSave">아이디 저장
+
+                        <a href="#">아이디 찾기 / 비밀번호 찾기</a><br> </div>
+                    <input type="submit" value="로그인"><br>
+
+
+
+                </form>
+                <div class="modal_line"></div>
+                <div class="resister">
+                    <p><strong>현대카드 LIBRARY에 처음오셨나요?</strong> <br>회원가입을 하셔야 서비스 이용이 가능 합니다.</p>
+                    <a href="#" class="resister_btn" id="regiBtn">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_register">
+        <div class="modal_box register">
+            <div class="modal_content">
+                <span class="close_btn_regi">
+                      <span class="x_line1"></span>
+                <span class="x_line2"></span>
+                </span>
+                <h2>Register</h2>
+                <form action="POST" class="logIn">
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId"><br>
+                    <label for="userPw">패스워드</label>
+                    <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                    <label for="userPw">패스워드<br>재확인</label>
+                    <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                    <div class="modal_line"></div>
+                    <label for="userName">이름</label>
+                    <input type="text" name="userName"><br>
+                    <label for="userGender">성별</label>
+                    <input type="radio" name="userGender" value="man" checked> 남
+                    <input type="radio" name="userGender" value="woman"> 여<br>
+
+                    <label for="userMail">이메일</label>
+                    <input type="text" name="userMail"><br>
+                    <label for="userBirth">생년월일</label>
+                    <select name="userYear">
+                            <option value="default">-----</option>
+                        </select> 년
+                    <select name="userMonth">
+                            <option value="default">--</option>
+                        </select> 월
+                    <select name="userDate">
+                            <option value="default">--</option>
+                        </select> 일
+                    <br>
+                    <div class="modal_line"></div>
+                    <label for="userPhone[]">전화번호</label>010 -
+                    <input type="text" name="userPhone"> -
+                    <input type="text" name="userPhone">
+                    <br><br>
+
+                    <input type="submit" value="회원가입"><br>
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 하이라이트 본문 -->
+
+    <div id="wrap">
+        <h1>
+            HIGHLIGHT SPOT
+        </h1>
+        <div class="section sec1">
+            <div class="text">
+                <h2>
+                    360 VR TOUR
+                </h2>
+                <p>
+                    마우스로 화면을 상하좌우로 움직여 360VR Space Tour 영상을 감상하세요.
+                </p>
+                <iframe id="movie" src="https://my.matterport.com/show/?m=ENqmSPZDWtY&help=0&play=1&qs=1" width="100%" height="674px" frameborder="0"></iframe>
+                <p>
+                    사용자의 PC, 브라우저 환경에 따라 360VR 동영상 이용에 제한이 있을 수 있습니다.
+                </p>
+                <p>
+                    Internet Explorer, Chrome, Firefox 최신 브라우저 이용을 권장합니다.
+                </p>
+            </div>
+        </div>
+        <div class="section sec2">
+
+            <div class="content">
+                <div class="text txt1">
+                    <h4>집속의 집<br><br></h4>
+                    <p>2층에는 집의 형상으로 기존 공간을 가로지르는 '집속의 집'이 들어섰다. 이 공간은 단순하고 정제된 공간 속에서 서로 다른 스케일을 체험하게 하는 동시에, 하나의 공간 안에서 다양한 장면과 깊이감을 만든다.<br><br>‘집속의 집’에서는 라이브러리에서 소장하고 있는 북 컬렉션 중 동시대의 분야별 영향력 있는 디자이너를 매월 선정해 집중 조명 하는 ‘Designer of the Month’를 만나볼 수 있다.<br><br>또한 급변하는 트렌드와 잊혀졌던 고전을 발굴해 매월 새롭게 소개하는 신규 입고 도서 섹션 ‘NEW’, 전월 이용자들의 관심을 가장 많이 받았던 인기 열람 도서 섹션 ‘Popular’, 현대카드 DESIGN LIBRARY 큐레이션을 통해 엄선된 추천 도서 섹션 ‘Essential’을 한 눈에 파악할 수 있는 자리가 마련되어 있어 부담 없이 디자인 전문 서적을 즐길 수 있다.</p>
+                </div>
+
+                <div class="text txt2">
+                    <h4>기오헌<br><br></h4>
+                    <p>디자인 라이브러리 3층에는 다락방과 같이 작은 공간에 서가와 열람실이 있다. 열람 공간은 '기오헌(寄傲軒)'이라 불리는데, 이는 창덕궁에 있는 세자의 공부방의 이름을 따온 것이다. 기오헌은 소박하고 작은 누각으로 되어 있는 대신 경치를 감상할 수 있는 큰 창이 있어 태도는 겸손하되 시야는 넓게 가지라는 의미를 담고 있다고 한다.<br><br>기오헌을 본따 만들어진 이 공간도 크기는 작지만 창 밖을 통해 풍경을 감상할 수 있다. 벤치에 앉아 밖을 바라보면 전통 한옥의 지붕부터 현대적인 건물이 시야에 함께 들어온다. 전통과 현대, 도시와 자연이 한데 어우러진 경치를 감상할 수 있는 곳, 디자인 라이브러리에서 놓치지 말아야 할 공간이다.</p>
+                </div>
+                <div class="text txt3">
+                    <h4>희귀본 컬렉션<br><br></h4>
+                    <p>디자인 라이브러리는 소량 인쇄되었거나 절판된 책, 또는 역사적으로 중요한 가치를 지닌 책들을 희귀본 컬렉션 (Rare Book Collection)으로 분류해 이들을 직접 보고, 영감을 받을 수 있는 기회를 제공한다. 이는 빠른 속도로 소진되어가고 있는 희귀 장서를 보존하기 위해 노력하는 것 또한 디지털 시대에 아날로그를 지향하는 라이브러리가 수행해야 할 하나의 중요한 역할이라고 믿기 때문이다.<br><br>또한 소장하고 있는 리미티드 에디션 및 아트북 약 400여 권 중, 매 월 주제에 맞게 책을 선정하여 작은 규모로 책 전시가 진행된다. 이 도서들은 보존가치가 높기 때문에 장갑 착용 후 열람해야 한다.<br><br></p>
+                </div>
+                <div class="text txt4">
+                    <h4>도무스 컬렉션<br><br></h4>
+                    <p>'도무스'라는 이탈리아에서 발행되는 건축, 디자인 잡지로 건축 분야에서는 매우 영향력 있는 잡지로 알려져 있다.<br><br>디자인 라이브러리에서는 1928년 창간호부터 최신호까지 전 컬렉션을 보유하고 있으며, 잡지의 상태에 따라 재제본을 하거나 커버를 씌워 열람할 수 있도록 하고있다.</p>
+                </div>
+                <div class="text txt5">
+                    <h4>라이프 컬렉션<br><br></h4>
+                    <p>디자인 라이브러리는 미국에서 발행되던 대중잡지인 '라이프'도 전 컬렉션을 보유하고 있다. 화면 전체를 가득 채우는 커버사진은 당시의 가장 화제가 되는 장면들을 포착하면서 포토저널리즘 분야에서 그 중요성을 인정받았다.<br><br>디자인 라이브러리 에서는 1936년 창간호부터 2000년도 폐간될 때까지의 '라이프' 전 컬렉션을 보유하고 있을 뿐만 아니라, 매 월 시즌에 맞는 주제에 따라 전시도 진행된다.</p>
+                </div>
+
+                <div class="img">
+                    <ul>
+                        <li class="img_1"></li>
+                        <li class="img_2"></li>
+                        <li class="img_3"></li>
+                        <li class="img_4"></li>
+                        <li class="img_5"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- footer 부분 -->
+
+    <div class="footer">
+        <div class="ftop">
+            <ul>
+                <li>NOTICE　　　</li>
+                <li><a href="#">ㅣ　　2018.02.14  [ Library Home ]  현대카드 LIBRARY 설연휴 휴관 안내　　></a></li>
+                <li class="line"></li>
+            </ul>
+        </div>
+        <div class="btop">
+            <ul>
+                <li class="img"><img src="img/foot_logo.png" alt=""></li>
+                <li class="txt1">서울특별시 영등포구 의사당대로3 현대캐피탈빌딩 | 대표이사 정태영</li>
+                <li class="txt2">사업자등록번호 213-86-15419 ⓒ HYUNDAI CARD Corp</li>
+                <li class="box">
+                    <a href="">패밀리</a>
+                    <span class="icon"></span>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- 자바스크립트 스크롤 부분 -->
+
+    <script src="./js/scroll.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var el = document.querySelector('.content .text.txt1');
+
+            if (window.scrollY >= 500 && window.scrollY <= 1800) el.classList.add('shown');
+            else el.classList.remove('shown');
+        });
+
+        window.addEventListener('scroll', function() {
+            var el = document.querySelector('.content .text.txt2');
+
+            if (window.scrollY >= 1300 && window.scrollY <= 2400) el.classList.add('shown');
+            else el.classList.remove('shown');
+        });
+
+        window.addEventListener('scroll', function() {
+            var el = document.querySelector('.content .text.txt3');
+
+            if (window.scrollY >= 2000 && window.scrollY <= 3000) el.classList.add('shown');
+            else el.classList.remove('shown');
+        });
+
+        window.addEventListener('scroll', function() {
+            var el = document.querySelector('.content .text.txt4');
+
+            if (window.scrollY >= 2700 && window.scrollY <= 3600) el.classList.add('shown');
+            else el.classList.remove('shown');
+        });
+
+        window.addEventListener('scroll', function() {
+            var el = document.querySelector('.content .text.txt5');
+
+            if (window.scrollY >= 3300) el.classList.add('shown');
+            else el.classList.remove('shown');
+        });
+
+    </script>
+
+    <!--모달창 자바스크립트 부분입니다. -->
+
+    <script>
+        // Get the modal
+
+
+        var modalLogin = document.getElementById('modal_login');
+        var modalRegi = document.getElementById('modal_register');
+        // Get the button that opens the modal
+        var loginBtn = document.getElementById("loginBtn");
+        var RegiBtn = document.getElementById("regiBtn");
+        // Get the <span> element that closes the modal
+        var closeLogin = document.getElementsByClassName("close_btn_login")[0];
+        var closeRegi = document.getElementsByClassName("close_btn_regi")[0];
+
+        // When the user clicks on the button, open the modal 
+        loginBtn.onclick = function() {
+            modalLogin.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalLogin) {
+                modalLogin.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, open the modal 
+        regiBtn.onclick = function() {
+            modalRegi.style.display = "block";
+            modalLogin.style.display = "none";
+        }
+
+        closeLogin.onclick = function() {
+
+            modalLogin.style.display = "none";
+        }
+        closeRegi.onclick = function() {
+            modalRegi.style.display = "none";
+
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalRegi) {
+                modalRegi.style.display = "none";
+                modalLogin.style.display = "none";
+            }
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

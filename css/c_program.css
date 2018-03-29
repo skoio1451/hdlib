@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+@font-face {
+
+    font-family: nf;
+    src: url('YouandiModernTR.ttf');
+}
+
+@font-face {
+
+    font-family: bd;
+    src: url('YouandiModernHB.ttf');
+}
+
+body {
+    font-family: nf;
+}
+
+
+#cpgWrap {
+    width: 100%;
+    height: auto;
+}
+
+.cpgsection1 {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    margin:0 auto;
+    
+}
+
+.cpgsection1 h1 {
+   
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 500px;
+    font-weight: bolder;
+}
+
+.cpgsection2 {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.cpgsection2 .cpgsecimg {
+    width: 100%;
+    height: 560px;
+    background-image: url(../img/bg_cooking_programs.jpg);
+    background-size: cover;
+    
+}
+
+
+.cpgsecwrap {
+    width: 100%;
+    max-width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    margin:0 auto;
+    position: relative;
+    top:-400px;
+    
+}
+
+
+.cpgsecwrap>ul>li{
+    float:left;
+    width:33.333%;
+ 
+}
+
+li .cpgtitle{
+    
+    height: 112px;
+    
+    font-size: 50px;
+    line-height: 1.12;
+    color: #fff;
+    text-align: center;
+    
+    
+}
+
+
+li .cpgsubtitle{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #fff;
+}
+
+
+li .cpgbtn{
+    width:70%;
+    height: 70px;
+    background-color: #000;
+    color:white;
+    text-align: center;
+    line-height: 70px;
+    margin: 0 auto;
+    margin-top:25px;
+}
+
+
+ .cpgline{
+    border-right: 1px solid#fff;
+     box-sizing: border-box;
+}

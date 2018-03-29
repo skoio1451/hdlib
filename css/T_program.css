@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+@font-face {
+
+    font-family: nf;
+    src: url('YouandiModernTR.ttf');
+}
+
+@font-face {
+
+    font-family: bd;
+    src: url('YouandiModernHB.ttf');
+}
+
+body {
+    font-family: nf;
+}
+
+
+#tpgwrap {
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+
+}
+
+
+.tpgsection1 {
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+}
+
+
+.tpgwrap {
+    width: 1200px;
+    height: 350px;
+
+    margin: 0 auto;
+}
+
+.tpgline {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    top: 290px;
+}
+
+.tpgsection1 .tpgtitle {
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+    margin: 100px 0px;
+    font-family: bd;
+
+
+}
+
+.tpgsection1 .tpgtalk {
+    width: 52px;
+    font-size: 18px;
+    font-family: bd;
+    line-height: 40px;
+    border-bottom: 3px solid #000;
+
+}
+
+
+.tpgsection1 .tpgsectxt {
+    margin-top: 42px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+
+}
+
+.tpgsection2 {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.tpgsection2 .tpgimg {
+    width: 100%;
+    height: 860px;
+    background-image: url(../img/tl_program_current_bg.jpg);
+    background-size: cover;
+
+}
+
+.tpgsection2 .tpgsection2Wrap {
+    width: 1200px;
+    height: 624px;
+
+    position: relative;
+    margin: 0 auto;
+    bottom: 740px;
+    background-color: #fff;
+
+
+
+}
+
+.tpgsection2 .tpgsection2Wrap .son {
+    width: 1200px;
+    height: 396px;
+    background-image: url(../img/20180119153528179.jpg);
+    background-size: cover;
+
+}
+
+.tpgsection2 .tpgsection2Wrap .tpgsubtit {
+    font-size: 30px;
+    margin: 30px 50px;
+    color: #000;
+}
+
+.tpgsection2 .tpgsection2Wrap .tpgsub {
+    font-size: 16px;
+    color: #787878;
+    line-height: 24px;
+    margin-left: 50px;
+}
+
+.tpgbtn {
+    position: absolute;
+    right: 40px;
+    margin: 10px;
+    border-bottom: 1px solid;
+    font-weight: bold;
+
+    height: 22px;
+}
+
+.tpgbtn:hover {
+    color: #8d8d8d;
+}
+
+
+/*section3*/
+
+.tpgsection3 {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+ 
+    margin: 0 auto;
+    position: relative;
+    top: -505px;
+    overflow: hidden;
+}
+
+
+.tpgsection3 > ul > li {
+    float: left;
+
+}
+
+.pgsec3 {
+    margin-bottom: 76px;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+    
+
+}
+
+.pgsecimg {
+    width: 150px;
+    height: 150px;
+  
+
+}
+
+.pgsec3text {
+    width: 900px;
+    height: 210px;
+   
+
+
+}
+.pgsec{
+    width: 1200px;
+    height: 210px;
+    box-sizing: border-box;
+}
+.pgsecimg{
+   margin:-15px 30px 0 0;
+    
+}
+.pgsecimg.one {
+    background-image: url(../img/120180119164459244.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+   
+
+}
+.pgsecimg.two {
+    background-image: url(../img/220171129155114228.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+ 
+
+}
+
+.pgsecimg.three {
+    background-image: url(../img/320171129194605605.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+   
+
+}
+
+.pgsecimg.four {
+    background-image: url(../img/420171129194642208.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+  
+
+}
+
+.pgsecimg.five {
+    background-image: url(../img/520171129194808179.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+  
+
+}
+.pgsec .date{
+    line-height: 130px;
+    
+}
+
+.sec3tit{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+
+    
+    
+}
+
+
+.sec3con{
+    font-size: 14px;
+    line-height: 5px;
+    margin-bottom: 10px;
+}
+
+.pgsec{
+    padding:46px 0;
+    border-bottom:1px solid#ccc;
+    box-sizing: border-box;
+}
+
+
+.sec3con2{
+    line-height: 100px;
+    
+}
+
+.tpgsection4{
+    width:10%;
+    height: auto;
+    position:relative;
+    top:-450px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: -400px;
+    
+}
+.tpgsection4>ul>li{
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.tpgsection4>ul>li:hover{
+    color:#000;
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+
+font-family: nf;
+src:url('YouandiModernTR.ttf');
+}
+
+@font-face {
+
+font-family: bd;
+src:url('YouandiModernHB.ttf');
+}
+
+
+
+h1, h2{
+	font-family: bd;
+}
+
+p, a, h3{
+
+font-family: nf;
+
+}

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/visit.css">
+</head>
+
+<body>
+    <div id="music_visit">
+
+        <div class="header">
+            <div class="nav">
+                <div class="top_nav">
+                    <div class="logo"></div>
+                    <div class="search">
+                        <p>현대카드 라이브러리의 도서/음반을 검색해 보세요.</p>
+                    </div>
+                    <div class="cate">
+                        <a class="myBtn" id="loginBtn" href="#">로그인</a>
+                    </div>
+                </div>
+                <div class="bottom_nav">
+                    <ul>
+                        <li><a href="./expert.html">HOME</a>
+
+                        </li>
+                        <li><a href="#">DESIGN LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">DESIGN LIBRARY</a></li>
+                                <li><a href="./design.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="#">HIGHLIGHT SPOT</a></li>
+                                <li><a href="#">PROGRAM</a></li>
+                                <li><a href="#">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TRAVEL LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">TRAVEL LIBRARY</a></li>
+                                <li><a href="./travel_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="#">HIGHLIGHT SPOT</a></li>
+                                <li><a href="#">PROGRAM</a></li>
+                                <li><a href="#">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MUSIC LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">MUSIC LIBRARY</a></li>
+                                <li><a href="./musiclibrary.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="#">HIGHLIGHT SPOT</a></li>
+                                <li><a href="#">PROGRAM</a></li>
+                                <li><a href="#">VISIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">COOKING LIBRARY</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">COOKING LIBRARY</a></li>
+                                <li><a href="./cooking_about.html">ABOUT</a></li>
+                                <li><a href="#">BOOKS</a></li>
+                                <li><a href="#">HIGHLIGHT SPOT</a></li>
+                                <li><a href="#">PROGRAM</a></li>
+                                <li><a href="#">VISIT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal_login">
+            <div class="modal_box login">
+                <div class="modal_content">
+                    <span class="close_btn_login">
+                      <span class="x_line1"></span>
+                    <span class="x_line2"></span>
+                    </span>
+                    <h2>Log in</h2>
+                    <form action="POST" class="logIn">
+                        <label for="userId">아이디</label>
+                        <input type="text" name="userId"><br>
+                        <label for="userPw">패스워드</label>
+                        <input type="password" name="userPw"><br>
+                        <div class="bottom_input">
+                            <input type="checkbox" name="idSave">아이디 저장
+
+                            <a href="#">아이디 찾기 / 비밀번호 찾기</a><br> </div>
+                        <input type="submit" value="로그인"><br>
+
+
+
+                    </form>
+                    <div class="modal_line"></div>
+                    <div class="resister">
+                        <p><strong>현대카드 LIBRARY에 처음오셨나요?</strong> <br>회원가입을 하셔야 서비스 이용이 가능 합니다.</p>
+                        <a href="#" class="resister_btn" id="regiBtn">회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal_register">
+            <div class="modal_box register">
+                <div class="modal_content">
+                    <span class="close_btn_regi">
+                      <span class="x_line1"></span>
+                    <span class="x_line2"></span>
+                    </span>
+                    <h2>Register</h2>
+                    <form action="POST" class="logIn">
+                        <label for="userId">아이디</label>
+                        <input type="text" name="userId"><br>
+                        <label for="userPw">패스워드</label>
+                        <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                        <label for="userPw">패스워드<br>재확인</label>
+                        <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                        <div class="modal_line"></div>
+                        <label for="userName">이름</label>
+                        <input type="text" name="userName"><br>
+                        <label for="userGender">성별</label>
+                        <input type="radio" name="userGender" value="man" checked> 남
+                        <input type="radio" name="userGender" value="woman"> 여<br>
+
+                        <label for="userMail">이메일</label>
+                        <input type="text" name="userMail"><br>
+                        <label for="userBirth">생년월일</label>
+                        <select name="userYear">
+                            <option value="default">-----</option>
+                        </select> 년
+                        <select name="userMonth">
+                            <option value="default">--</option>
+                        </select> 월
+                        <select name="userDate">
+                            <option value="default">--</option>
+                        </select> 일
+                        <br>
+                        <div class="modal_line"></div>
+                        <label for="userPhone[]">전화번호</label>010 -
+                        <input type="text" name="userPhone"> -
+                        <input type="text" name="userPhone">
+                        <br><br>
+
+                        <input type="submit" value="회원가입"><br>
+
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            // Get the modal
+
+
+            var modalLogin = document.getElementById('modal_login');
+            var modalRegi = document.getElementById('modal_register');
+            // Get the button that opens the modal
+            var loginBtn = document.getElementById("loginBtn");
+            var RegiBtn = document.getElementById("regiBtn");
+            // Get the <span> element that closes the modal
+            var closeLogin = document.getElementsByClassName("close_btn_login")[0];
+            var closeRegi = document.getElementsByClassName("close_btn_regi")[0];
+
+            // When the user clicks on the button, open the modal 
+            loginBtn.onclick = function() {
+                modalLogin.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modalLogin) {
+                    modalLogin.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, open the modal 
+            regiBtn.onclick = function() {
+                modalRegi.style.display = "block";
+                modalLogin.style.display = "none";
+            }
+
+            closeLogin.onclick = function() {
+
+                modalLogin.style.display = "none";
+            }
+            closeRegi.onclick = function() {
+                modalRegi.style.display = "none";
+
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modalRegi) {
+                    modalRegi.style.display = "none";
+                    modalLogin.style.display = "none";
+                }
+            }
+
+        </script>
+
+
+        <h1>VISIT</h1>
+        <section class="location clearfix">
+            <div class="text">
+                <div class="text_vertical">
+                    <h2>LOCATION</h2>
+                    <p class="loc_p1">현대카드 MUSIC LIBRARY</p>
+                    <p class="loc_p2">서울시 용산구 이태원로 246</p>
+                    <p class="loc_p3"><strong>T</strong> 02-331-6300<br><strong>E</strong> musiclibrary@hcs.com</p>
+                </div>
+
+            </div>
+            <div class="map col-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.1999448283527!2d126.99962033986517!3d37.53648076359009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3b3bbbf8e47%3A0xdd78d9de0bc67ca!2z7ZiE64yA7Lm065OcIOuupOyngSDrnbzsnbTruIzrn6zrpqw!5e0!3m2!1sko!2skr!4v1521449635613" width="100%" height="860px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+        </section>
+        <section class="hour">
+            <div class="center clearfix">
+                <h2>HOUR</h2>
+                <div class="col-6">
+                    <p class="hour_small">화-토요일</p>
+                    <p class="hour_big">PM 12:00 ~ PM 09:00</p>
+                    <p class="hour_small">일요일 및 공휴일</p>
+                    <p class="hour_big">PM 12:00 ~ PM 06:00</p>
+                    <p class="hour_big">매주 월요일, 설, 추석 연휴 휴관</p>
+                </div>
+                <div class="col-6">
+                    <p class="hour_small">오늘의 운영 시간</p>
+                    <p class="hour_big">PM 12:00 ~ PM 09:00</p>
+                    <p class="hour_small">금일 마감까지 남은 시간</p>
+                    <p  id="demo">03 : 33 : 06</p>
+                </div>
+            </div>
+        </section>
+        
+        
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML =hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+        
+        
+        
+        <section class="admission">
+            <div class="center">
+                <h2>ADMISSION</h2>
+                <ul class="clearfix">
+                    <li class="col-6">
+                        <h3>입장기준</h3>
+                        <p>현대카드 회원 전용 ( 무기명 법인카드 및 Gift카드 제외 )
+                            <br>2F 회원 본인 및 동반 2인 무료입장 (만 19세 이상, 월 8회 한정)</p>
+                        <ul class="rule_li">
+                            <li>연령 및 본인 확인을 위해 신분증 지참</li>
+                            <li>본인 입장 횟수 초과 및 동반 2인 초과 시 입장 불가</li>
+                            <li>쾌적한 열람을 위해 동시 열람인원 30명 제한 (대기 입장 가능)</li>
+                            <li>회원 본인 동반 없이 비회원 입장 불가</li>
+                        </ul>
+                        <a href="https://www.hyundaicard.com/cpc/ma/CPCMA0101_01.hc" target="_blank">현대카드 한눈에 보기</a>
+                    </li>
+                    <li class="col-6">
+                        <h3>발레파킹</h3>
+                        <p>발레파킹 이용 시 2시간 무료 주차<br> 주차대행료 : 3,000원 / 2시간 초과 주차 시 10분당 1,000원<br> 주차확인증 : 리셉션 데스크 주차 확인도장</p>
+                        <ul class="rule_li">
+                            <li>주차는 실제 라이브러리 이용시간에 한하며, 주차 중 외출 불가</li>
+                            <li>만차 시 발레파킹 서비스 및 주차 공간 제공 불가</li>
+                            <li>Understage 및 Café 이용 고객은 발레파킹 서비스 이용 불가 (※ 패널티 있음)</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <section class="guide_lines">
+            <div class="center">
+                <h2>GUIDELINES</h2>
+                <ul class="clearfix">
+                    <li>
+                        <div class="icon"></div>
+                        <p class="txt">슬리퍼, 운동복,<br>등산복 입장 불가</p>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <p class="txt">금연</p>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <p class="txt">애완동물
+                            <br>입장 불가</p>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <p class="txt">외부 음식<br>반입 금지</p>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <p class="txt">바이닐/서적<br> 외부 대출 및<br> 복사 불가</p>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <p class="txt">바이닐/서적<br> 구매대행 가능<br> (02-2624-1332)
+                        </p>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <p class="txt">스마트폰<br> 사진 촬영 가능<br> (카메라 및 촬영<br> 전문 장비 사용<br> 불가)
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="floor_guide">
+            <h2>FLOOR GUIDE</h2>
+
+            <div class="floor_tab clearfix">
+                <div class="center">
+                    <div class="tablinks active" onclick="openCity(event, 'first')">
+                        <h3>1F</h3>
+                        <p>RECEPTION&amp;CAFÉ</p>
+                    </div>
+                    <div class="tablinks" onclick="openCity(event, 'second')">
+
+                        <h3>2F</h3>
+                        <p>LIBRARY</p>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <ol>
+                <li>
+                    <h3>1F</h3>
+                    <p>RECEPTION&amp;CAFÉ</p>
+                </li>
+                <li>
+                    <h3>2F</h3>
+                    <p>LIBRARY</p>
+                </li>
+            </ol>
+-->
+            <div id="first" class="tabcontent center clearfix">
+                <img src="./img/floor1.gif" alt="1층 지도">
+                <div class="text">
+                    <h4>Café</h4>
+                </div>
+
+            </div>
+            <div id="second" class="tabcontent center clearfix">
+                <img src="./img/floor2.gif" alt="2층 지도">
+                <div class="text">
+                    <h4>2000s~-VINYL·BOOKS</h4>
+                    <p>Jazz<br> Soul
+                        <br> Rock
+                        <br> Electronic
+                        <br> Hip Hop</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="faq">
+            <div class="center">
+                <h2>FAQ</h2>
+                <div class="qna_li">
+                    <div class="accordion">대중교통으로 갈 수 있는 방법은 무엇인가요?</div>
+                    <div class="panel">
+                        <p>지하철로 오실 경우, 분당선 압구정로데오역 5번출구로 나와 200미터 정도 직진하신 후 우측 골목 선릉로153길로 300미터 정도 들어오신 후, 도산공원 앞에서 우측 골목 압구정로46길로 100미터 정도 더 들어오시면 좌측 정면에 있습니다. (도보 약 12분)<br>
+버스로 오실 경우, 간선버스(파랑) 145, 301, 351, 440, 472 및 지선버스(초록) 4412번 일지아트홀, 압구정동 노인복지센터 정류장에서 하차하신 후 디자이너스클럽 반대편 골목 선릉로153길로 300미터 정도 들어오신 후, 도산공원 앞에서 우측 골목 압구정로46길로 100미터 정도 더 들어오시면 좌측 정면에 있습니다. (도보 약 10분)</p>
+                    </div>
+                    <div class="accordion">이용 가능 연령이 어떻게 되나요?</div>
+                    <div class="panel">
+                        <p>Deli, Library 및 Kitchen I &amp; II는 만 19세 이상 입장 가능하며, 입장 시 연령 및 본인 확인 위해 신분증 지참이 필요합니다. 단, Greenhouse는 연령 제한 없이 이용 가능합니다.</p>
+                    </div>
+                    <div class="accordion">이용 가능 시간은 어떻게 되나요?</div>
+                    <div class="panel">
+                        <p>쿠킹 라이브러리의 이용 가능 시간은 화~토 12:00~21:00, 일 12:00~18:00입니다.<br>
+매주 월요일과 설·추석 연휴는 휴관하며, 법정 공휴일 운영시간은 일요일과 동일하니 참고하시기 바랍니다.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <div class="footer">
+            <div class="ftop">
+                <ul>
+                    <li>NOTICE　　　</li>
+                    <li><a href="#">ㅣ　　2018.02.14  [ Library Home ]  현대카드 LIBRARY 설연휴 휴관 안내　　></a></li>
+                    <li class="line"></li>
+                </ul>
+            </div>
+            <div class="btop">
+                <ul>
+                    <li class="img"><img src="img/foot_logo.png" alt=""></li>
+                    <li class="txt1">서울특별시 영등포구 의사당대로3 현대캐피탈빌딩 | 대표이사 정태영</li>
+                    <li class="txt2">사업자등록번호 213-86-15419 ⓒ HYUNDAI CARD Corp</li>
+                    <li class="box">
+                        <a href="">패밀리</a>
+                        <span class="icon"></span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var defaultContent = document.getElementById('first');
+        defaultContent.style.display = "block";
+
+        function openCity(evt, cityName) {
+
+            //floor tab 
+
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+
+
+
+        //qna panel
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>expert</title>
+    <link rel="stylesheet" href="css(2week)/reset.css">
+    <link rel="stylesheet" href="css(2week)/expert.css">
+    <link rel="stylesheet" href="css(2week)/social.css">
+    <link rel="stylesheet" href="css(2week)/videoClip.css">
+    <link rel="stylesheet" href="css(2week)/enjoy.css">
+    <link rel="stylesheet" href="css(2week)/visit.css">
+    <link rel="stylesheet" href="css(2week)/modal.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <div class="top_nav">
+                <div class="logo"></div>
+                <div class="search">
+                    <p>현대카드 라이브러리의 도서/음반을 검색해 보세요.</p>
+                </div>
+                <div class="cate">
+                    <a class="myBtn" id="loginBtn" href="#">로그인</a>
+                </div>
+            </div>
+            <div class="bottom_nav">
+                <ul>
+                    <li><a href="./index.html">HOME</a>
+
+                    </li>
+                    <li><a href="#">DESIGN LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="./design_main.html">DESIGN LIBRARY</a></li>
+                            <li><a href="./design_about.html">ABOUT</a></li>
+                            <li><a href="./design_books.html">BOOKS</a></li>
+                            <li><a href="./design_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./design_program.html">PROGRAM</a></li>
+                            <li><a href="./design_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TRAVEL LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">TRAVEL LIBRARY</a></li>
+                            <li><a href="./travel_about.html">ABOUT</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="./travel_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./travel_program.html">PROGRAM</a></li>
+                            <li><a href="travel_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MUSIC LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">MUSIC LIBRARY</a></li>
+                            <li><a href="./music_about.html">ABOUT</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="./music_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./music_program.html">PROGRAM</a></li>
+                            <li><a href="./music_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">COOKING LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">COOKING LIBRARY</a></li>
+                            <li><a href="./cooking_about.html">ABOUT</a></li>
+                            <li><a href="#">BOOKS</a></li>
+                            <li><a href="./cooking_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="./cooking_program.html">PROGRAM</a></li>
+                            <li><a href="./cooking_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal_login">
+        <div class="modal_box login">
+            <div class="modal_content">
+                <span class="close_btn_login">
+                      <span class="x_line1"></span>
+                <span class="x_line2"></span>
+                </span>
+                <h2>Log in</h2>
+                <form action="POST" class="logIn">
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId"><br>
+                    <label for="userPw">패스워드</label>
+                    <input type="password" name="userPw"><br>
+                    <div class="bottom_input">
+                        <input type="checkbox" name="idSave">아이디 저장
+
+                        <a href="#">아이디 찾기 / 비밀번호 찾기</a><br> </div>
+                    <input type="submit" value="로그인"><br>
+
+
+
+                </form>
+                <div class="modal_line"></div>
+                <div class="resister">
+                    <p><strong>현대카드 LIBRARY에 처음오셨나요?</strong> <br>회원가입을 하셔야 서비스 이용이 가능 합니다.</p>
+                    <a href="#" class="resister_btn" id="regiBtn">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_register">
+        <div class="modal_box register">
+            <div class="modal_content">
+                <span class="close_btn_regi">
+                      <span class="x_line1"></span>
+                <span class="x_line2"></span>
+                </span>
+                <h2>Register</h2>
+                <form action="POST" class="logIn">
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId"><br>
+                    <label for="userPw">패스워드</label>
+                    <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                    <label for="userPw">패스워드<br>재확인</label>
+                    <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                    <div class="modal_line"></div>
+                    <label for="userName">이름</label>
+                    <input type="text" name="userName"><br>
+                    <label for="userGender">성별</label>
+                    <input type="radio" name="userGender" value="man" checked> 남
+                    <input type="radio" name="userGender" value="woman"> 여<br>
+
+                    <label for="userMail">이메일</label>
+                    <input type="text" name="userMail"><br>
+                    <label for="userBirth">생년월일</label>
+                    <select name="userYear">
+                            <option value="default">-----</option>
+                        </select> 년
+                    <select name="userMonth">
+                            <option value="default">--</option>
+                        </select> 월
+                    <select name="userDate">
+                            <option value="default">--</option>
+                        </select> 일
+                    <br>
+                    <div class="modal_line"></div>
+                    <label for="userPhone[]">전화번호</label>010 -
+                    <input type="text" name="userPhone"> -
+                    <input type="text" name="userPhone">
+                    <br><br>
+
+                    <input type="submit" value="회원가입"><br>
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="frontWrap">
+
+        <div class="sliderTopDiv">
+
+
+
+
+            <div class="css-sliderTop-wrapper">
+
+                <input type="radio" name="sliderTop" class="slide-radio1" checked id="sliderTop_1">
+                <input type="radio" name="sliderTop" class="slide-radio2" id="sliderTop_2">
+                <input type="radio" name="sliderTop" class="slide-radio3" id="sliderTop_3">
+                <input type="radio" name="sliderTop" class="slide-radio4" id="sliderTop_4">
+
+
+                <div class="sliderTop-pagination">
+
+                    <label for="sliderTop_1" class="page1"></label>
+                    <label for="sliderTop_2" class="page2"></label>
+                    <label for="sliderTop_3" class="page3"></label>
+                    <label for="sliderTop_4" class="page4"></label>
+                </div>
+
+                <div class="next control">
+                    <label for="sliderTop_1" class="numb1">&gt;</label>
+                    <label for="sliderTop_2" class="numb2">&gt;</label>
+                    <label for="sliderTop_3" class="numb3">&gt;</label>
+                    <label for="sliderTop_4" class="numb4">&gt;</label>
+                </div>
+                <div class="previous control">
+                    <label for="sliderTop_1" class="numb1">&lt;</label>
+                    <label for="sliderTop_2" class="numb2">&lt;</label>
+                    <label for="sliderTop_3" class="numb3">&lt;</label>
+                    <label for="sliderTop_4" class="numb4">&lt;</label>
+                </div>
+
+
+                <div class="sliderTop slide1">
+                    <div class="slideCon">
+                        <div class="slideText">
+                            <span>COOKING LIBRARY</span> | THEME SPECIAL 11
+                        </div>
+                        <div class="slideSubject">Artist's Cookbook</div>
+                        <div class="slideText">
+                            <p>Theme Special 11 | 2018.03</p>
+                        </div>
+
+                        <div class="subBtn"><a href="#">더 알아보기 &gt;</a></div>
+                    </div>
+                </div>
+                <div class="sliderTop slide2">
+                    <div class="slideCon">
+                        <div class="slideText">
+                            <span>COOKING LIBRARY</span> | THEME SPECIAL 11
+                        </div>
+                        <div class="slideSubject">Artist's Cookbook</div>
+                        <div class="slideText">
+                            <p>Theme Special 11 | 2018.03</p>
+                        </div>
+
+                        <div class="subBtn"><a href="#">더 알아보기 &gt;</a></div>
+                    </div>
+                </div>
+                <div class="sliderTop slide3">
+                    <div class="slideCon">
+                        <div class="slideText">
+                            <span>COOKING LIBRARY</span> | THEME SPECIAL 11
+                        </div>
+                        <div class="slideSubject">Artist's Cookbook</div>
+                        <div class="slideText">
+                            <p>Theme Special 11 | 2018.03</p>
+                        </div>
+
+                        <div class="subBtn"><a href="#">더 알아보기 &gt;</a></div>
+                    </div>
+                </div>
+                <div class="sliderTop slide4">
+                    <div class="slideCon">
+                        <div class="slideText">
+                            <span>COOKING LIBRARY</span> | THEME SPECIAL 11
+                        </div>
+                        <div class="slideSubject">Artist's Cookbook</div>
+                        <div class="slideText">
+                            <p>Theme Special 11 | 2018.03</p>
+                        </div>
+
+                        <div class="subBtn"><a href="#">더 알아보기 &gt;</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <div id="enjoyWrap">
+
+        <div class="enjoyTitle">
+            <div class="titleText">
+                <h3>영감의 공간 현대카드 라이브러리</h3>
+                <br>
+                <br>
+                <p>도시의 빠른 속도에서 벗어나 일상을 사유하고, 몰입을 통해 잊혀졌던 아날로그</p>
+                <p>감성과 영감을 회복하는 것 이것이 바로 현대카드가 라이브러리를 통해 제안하는 새로운 라이프스타일이다.</p>
+            </div>
+        </div>
+
+        <div class="enjoyTab">
+            <ul>
+                <li><a class="dLab" href="#">DESIGN<br>LIBRARY</a></li>
+                <li><a class="tLab" href="#">TRAVEL<br>LIBRARY</a></li>
+                <li><a class="mLab" href="#">MUSIC<br>LIBRARY</a></li>
+                <li><a class="cLab" href="#">COOKING<br>LIBRARY</a></li>
+            </ul>
+        </div>
+
+        <div class="enjoyInfo">
+
+            <div class="infoDiv">
+                <div class="dlLogo">
+                    <img src="./img/h_dl_logo.png" alt="">
+                </div>
+                <div class="subject">몰입의 시간 + 영감의 공간</div>
+                <div class="subText">
+                    <p>책을 매개로 잊혀졌던 삶의 가치를 회복하고 몰입의 시간을 통해 지적인 영감을 얻을 수 있는 공간,</p>
+                    <p>이것이 현대카드가 지향하는 디자인라이브러리의 모습이다.</p>
+                </div>
+
+                <div class="subBtn"><a href="#">더 알아보기 &gt;</a></div>
+                <div class="subBtn secondBtn"><a href="#">360˚ VR 둘러보기&gt;</a></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="hswrap">
+        <div class="hsTitle">
+            <p class="p1">SOCIAL</p>
+            <p class="p2">인스타그램 속 #현대카드라이브러리</p>
+        </div>
+        <div class="hsSearch">
+            <ul>
+                <li selected>#현대카드라이브러리</li>
+                <li>#현대카드디자인라이브러리</li>
+                <li>#현대카드트래블라이브러리</li>
+                <li>#현대카드뮤직라이브러리</li>
+                <li>#현대카드쿠킹라이브러리</li>
+            </ul>
+        </div>
+        <div class="hsInstagram">
+            <ul>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+                <li><a href="#" title="새창열기">
+            <span class="hsover"><p>Like # <br> Comment #</p></span>
+            </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="expert">
+        <div class="top_text">
+            <h2>전문가의 도서/음반 가이드</h2>
+            <p>매월 전문가들이 추천해 주는 테마별 도서 가이드를 소개합니다.</p>
+        </div>
+        <div id="expert_media_list">
+            <a class="arrow left_arrow" href="#"></a>
+            <a class="arrow right_arrow" href="#"></a>
+            <ul class="expert_li">
+                <li>
+                    <h3>나의 인생, 나의 요리</h3>
+                    <p class="expert_by">By 이욱정 PD</p>
+                    <p class="expert_p">미식 평론 입문을 위한 자전적 쿠킹 책</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <h3>건축가, 도시, 집을 이해할 수 있는 책</h3>
+                    <p class="expert_by">By 최욱 건축가</p>
+                    <p class="expert_p">삶을 설명하는 직업, 건축</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <h3>여행을 그리다</h3>
+                    <p class="expert_by">By 허태우 편집장</p>
+                    <p class="expert_p">봄날의 감성을 채워 줄 여행을 보고, 그린 책.</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <h3>건축가, 도시, 집을 이해할 수 있는 책</h3>
+                    <p class="expert_by">By 최욱 건축가</p>
+                    <p class="expert_p">삶을 설명하는 직업, 건축</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <h3>건축가, 도시, 집을 이해할 수 있는 책</h3>
+                    <p class="expert_by">By 최욱 건축가</p>
+                    <p class="expert_p">삶을 설명하는 직업, 건축</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <h3>건축가, 도시, 집을 이해할 수 있는 책</h3>
+                    <p class="expert_by">By 최욱 건축가</p>
+                    <p class="expert_p">삶을 설명하는 직업, 건축</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <h3>건축가, 도시, 집을 이해할 수 있는 책</h3>
+                    <p class="expert_by">By 최욱 건축가</p>
+                    <p class="expert_p">삶을 설명하는 직업, 건축</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="videoClip">
+        <div class="top">
+            <h2 class="tit">VIDEO CLIPS</h2>
+            <div class="sub_tit">영상으로 만나는 현대카드 라이브러리</div>
+            <div class="txt01">| LIBRARY TALK 05. Tartine Bakery with Chad Robertson</div>
+            <div class="txt02"><a href="#">쿠킹 라이브러리의 맛있는 토크 : 타르틴 베이커리 창립자 채드 로버트슨</a></div>
+        </div>
+        <div class="contents">
+            <div class="movies">
+                <ul>
+                    <li><iframe width="1200" height="560" src="https://www.youtube.com/embed/Y8f7auk5Gew" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+
+
+
+
+                    <li> <iframe width="1200" height="560" src="https://www.youtube.com/embed/7UlghTLjh8w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+
+
+
+                    <li> <iframe width="1200" height="560" src="https://www.youtube.com/embed/VGrWH5MPE8I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+
+
+
+                    <li><iframe width="1200" height="560" src="https://www.youtube.com/embed/F5Ry7DhB4gE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+                </ul>
+
+            </div>
+            <div class="btn left"></div>
+            <div class="btn right"></div>
+        </div>
+        <div class="bottom">
+
+
+            <div class="bot_txt">
+                <!--
+                <p class="demo"></p>
+
+                <script>
+                    var i = 0;
+                    var txt = ' 미국 샌프란시스코의 명물! 죽기전에 꼭 맛봐야 할 빵으로 알려진 #타르틴_베이커리 창립자인 #채드_로버트슨과 #현대카드가 만났다! 채드 로버트슨의 다양한 이야기와 한국에서 처음 선보이는 베이킹 시연으로 맛있는 빵을 맛볼수 있었던 기회까지! 오감을 자극하기 충분했던 특별한 시간, 그 날을 함꼐 영상으로 즐겨보세요!';
+                    var speed = 50;
+
+                    function typeWriter() {
+                        if (i < txt.length) {
+                            document.getElementById("demo").innerHTML += txt.charAt(i);
+                            i++;
+                            setTimeout(typeWriter, speed);
+                        }
+                    }
+                </script>
+-->
+                미국 샌프란시스코의 명물! "죽기전에 꼭 맛봐야 할 빵으로 알려진 #타르틴_베이커리 창립자인 #채드_로버트슨과 #현대카드가 만났다! 채드 로버트슨의 다양한 이야기와 한국에서 처음 선보이는 베이킹 시연으로 맛있는 빵을 맛볼수 있었던 기회까지! 오감을 자극하기 충분했던 특별한 시간, 그 날을 함 영상으로 즐겨보세요
+            </div>
+            <div class="button">VIDEO CLIP 모두 보기 ></div>
+        </div>
+    </div>
+    <div id="visit">
+        <div class="v_header">
+            <div class="text1">
+                <ul>
+                    <li>
+                        VISIT
+                    </li>
+                </ul>
+            </div>
+            <div class="text2">
+                <ul>
+                    <li>
+                        이용안내
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="map">
+                <div class="icon"><span class="ck">COOKING</span></div>
+                <div class="icon2"><span class="TV">TRAVEL</span></div>
+                <div class="icon3"><span class="DS">DESIGN</span></div>
+                <div class="icon4"><span class="MS">MUSIC</span></div>
+
+            </div>
+
+            <div class="text3">
+                <ul>
+                    <li class="tex t01">오늘 운영 시간</li>
+                    <li class="tex t02">PM 12:00 ~ PM 09:00</li>
+                    <li class="tex t03">폐관 까지 남은 시간</li>
+                    <li><span class="time">18 : 17 :55</span></li>
+                    <li class="tex t04">Membership</li>
+                    <li class="tex t05">회원 본인 및 동반 2인 무료 입장</li>
+                    <li class="tex t06">만 19세 이상, 월 8회 한정</li>
+
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="ftop">
+                <ul>
+                    <li>NOTICE　　　</li>
+                    <li><a href="#">ㅣ　　2018.02.14  [ Library Home ]  현대카드 LIBRARY 설연휴 휴관 안내　　></a></li>
+                    <li class="line"></li>
+                </ul>
+            </div>
+            <div class="btop">
+                <ul>
+                    <li class="img"><img src="img/foot_logo.png" alt=""></li>
+                    <li class="txt1">서울특별시 영등포구 의사당대로3 현대캐피탈빌딩 | 대표이사 정태영</li>
+                    <li class="txt2">사업자등록번호 213-86-15419 ⓒ HYUNDAI CARD Corp</li>
+                    <li class="box">
+                        <a href="">패밀리</a>
+                        <span class="icon"></span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <script>
+        var userYear = (document.getElementsByName(userYear)[0]);
+        var userMonth = (document.getElementsByName(userMonth)[0]);
+        var userDate = (document.getElementsByName(userDate)[0]);
+
+
+
+        // Get the modal
+
+
+        var modalLogin = document.getElementById('modal_login');
+        var modalRegi = document.getElementById('modal_register');
+        // Get the button that opens the modal
+        var loginBtn = document.getElementById("loginBtn");
+        var RegiBtn = document.getElementById("regiBtn");
+        // Get the <span> element that closes the modal
+        var closeLogin = document.getElementsByClassName("close_btn_login")[0];
+        var closeRegi = document.getElementsByClassName("close_btn_regi")[0];
+
+        // When the user clicks on the button, open the modal 
+        loginBtn.onclick = function() {
+            modalLogin.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalLogin) {
+                modalLogin.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, open the modal 
+        regiBtn.onclick = function() {
+            modalRegi.style.display = "block";
+            modalLogin.style.display = "none";
+        }
+
+        closeLogin.onclick = function() {
+
+            modalLogin.style.display = "none";
+        }
+        closeRegi.onclick = function() {
+            modalRegi.style.display = "none";
+
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalRegi) {
+                modalRegi.style.display = "none";
+                modalLogin.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

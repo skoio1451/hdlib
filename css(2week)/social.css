@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:YouandiModern;
+    src: url("../font/fontYouandiModernTR.ttf");
+}
+
+body{
+    font-family:YouandiModern;
+}
+
+#wrap{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.hsTitle{
+    width: 300px;
+    height: auto;
+    margin: 25px auto 100px;
+    
+}
+.hsSearch{/*width없음=auto*/
+    height: auto;
+    padding: 0px 100px 0px 100px;/*가운데로..?*/
+    margin:0 auto;
+    overflow: hidden;
+}
+.hsInstagram{
+    width: 1890px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hsInstagram ul>li:nth-child(1){
+    background: url("../img/bg_0.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(2){
+    background: url("../img/bg_1.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(3){
+    background: url("../img/bg_2.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(4){
+    background: url("../img/bg_3.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(5){
+    background: url("../img/bg_4.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(6){
+    background: url("../img/bg_5.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(7){
+    background: url("../img/bg_6.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(8){
+    background: url("../img/bg_7.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(9){
+    background: url("../img/bg_8.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(10){
+    background: url("../img/bg_9.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(11){
+    background: url("../img/bg_10.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(12){
+    background: url("../img/bg_11.png") no-repeat;
+} 
+.hsInstagram ul>li:nth-child(13){
+    background: url("../img/bg_12.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(14){
+    background: url("../img/bg_13.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(15){
+    background: url("../img/bg_14.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(16){
+    background: url("../img/bg_15.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(17){
+    background: url("../img/bg_16.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(18){
+    background: url("../img/bg_17.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(19){
+    background: url("../img/bg_18.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(20){
+    background: url("../img/bg_19.png") no-repeat;
+}
+.hsInstagram ul>li:nth-child(21){
+    background: url("../img/bg_20.png") no-repeat;
+}
+/*hsTitle 시작*/
+.hsTitle p{
+     text-align: center;
+}
+
+.hsTitle p.p1{
+    font-weight: 900;
+    font-size: 60px;
+} 
+.hsTitle p.p2{
+    font-size: 14px;
+}
+
+/*hsSearch 시작*/
+.hsSearch ul{
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+}
+.hsSearch ul>li{
+    width: auto;
+    float: left;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 14px 15px;
+    margin: 20px;
+    
+    color: #888888;
+    
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.hsSearch ul>li:hover{
+    background-color: #dedbdb;
+    box-shadow: 3px 4px 10px #dedbdb;
+    color: #000;
+}
+
+/*hsInstagram 시작*/
+.hsInstagram ul{
+    overflow: hidden;
+}
+.hsInstagram ul>li{
+    width: 270px;
+    height: 270px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 1s;
+    cursor: pointer;
+}
+.hsInstagram ul>li .hsover{
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    
+    transition: all 1s;
+    
+    background: #000;
+}
+.hsInstagram ul>li .hsover p{
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+    font-size: 25px;
+    color: #fff;
+}
+.hsInstagram ul>li:hover{
+    background-size: 110%;
+}
+.hsInstagram ul>li:hover .hsover{
+    
+    opacity: 1;
+    background: rgba(0,0,0,.5);
+}
